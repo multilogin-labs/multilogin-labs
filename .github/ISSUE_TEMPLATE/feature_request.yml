@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest a script, guide, or translation
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you need?
+      placeholder: e.g. Python Playwright example for profile launch
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Script / automation
+        - Platform playbook
+        - Comparison guide
+        - Translation
+        - Tool / CLI
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Extra context
+      placeholder: Market, platform, plan tier...

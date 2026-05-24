@@ -1,16 +1,40 @@
 <div align="center">
 
-# Multilogin Labs
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0066FF,100:003580&height=150&section=header&text=Multilogin%20Labs&fontSize=42&fontColor=ffffff&animation=fadeIn" width="100%" />
 
-**Antidetect browser · Cloud phone · Multi-account automation · MMO tools**
+### `@multilogin-labs` · Official partner hub · Profile repository
 
+**Antidetect browser · Cloud phone · Multi-account · MMO automation · 16 languages**
+
+[![GitHub stars](https://img.shields.io/github/stars/multilogin-labs/multilogin-labs?style=social)](https://github.com/multilogin-labs/multilogin-labs/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/multilogin-labs/multilogin-labs?style=social)](https://github.com/multilogin-labs/multilogin-labs/network/members)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Multilogin Partner](https://img.shields.io/badge/Multilogin-Official%20Partner-0066FF?style=for-the-badge)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 [![Trial](https://img.shields.io/badge/Trial-%242%20%2F%203%20days-00C853?style=for-the-badge)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 [![Promo](https://img.shields.io/badge/Code-SAAS50-FF6D00?style=for-the-badge)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
 **[→ Partner pricing & $2 trial](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**
 
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1200&color=0066FF&center=true&vCenter=true&width=600&lines=Multi-account+without+bans;Cloud+phones+%2B+antidetect;Scripts+%26+guides+for+MMO+teams;Partner+deal%3A+SAAS50+%7C+MIN50" alt="Typing intro" />
+
 </div>
+
+---
+
+## Navigate · Dẫn đường
+
+| | Resource | Link |
+|---|---|---|
+| 🚀 | **Getting started** | [docs/getting-started.md](docs/getting-started.md) |
+| 📊 | **Plan calculator** | [tools/plan-calculator.mjs](tools/plan-calculator.mjs) · `npm run plan` |
+| ⚔️ | **vs AdsPower / GoLogin / Octo** | [docs/comparisons/](docs/comparisons/) |
+| 📱 | **Platform playbooks** | [docs/platforms/](docs/platforms/) |
+| 🌏 | **Country playbooks** | [docs/playbooks/](docs/playbooks/) |
+| 🔗 | **Awesome resources** | [docs/awesome-resources.md](docs/awesome-resources.md) |
+| 🤖 | **Automation scripts** | [scripts/](scripts/) |
+| 🌍 | **16 locales** | [locales/](locales/) |
+
+> This repo **`multilogin-labs/multilogin-labs`** matches the GitHub username — it powers the public profile at [github.com/multilogin-labs](https://github.com/multilogin-labs).
 
 ---
 
@@ -87,16 +111,22 @@ Multi-account (FB, Google, TikTok, Amazon) · Automation & scraping · Cloud pho
 
 ```
 multilogin-labs/
-├── docs/                    # Guides (EN)
+├── docs/
 │   ├── getting-started.md
 │   ├── proxy-setup.md
-│   └── antifingerprint-checklist.md
+│   ├── antifingerprint-checklist.md
+│   ├── awesome-resources.md
+│   ├── comparisons/         # vs AdsPower, GoLogin, Octo
+│   ├── platforms/           # TikTok, Meta, Amazon
+│   └── playbooks/           # VN, BR, ID market playbooks
+├── tools/plan-calculator.mjs
 ├── scripts/
 │   ├── api/launch-profile.mjs
 │   ├── playwright/connect-profile.mjs
-│   └── puppeteer/connect-profile.mjs
+│   ├── puppeteer/connect-profile.mjs
+│   └── selenium/connect-profile.mjs
 ├── configs/proxy-template.json
-├── locales/                 # README summaries per language
+├── locales/                 # 15 README summaries
 └── package.json
 ```
 
@@ -105,7 +135,12 @@ multilogin-labs/
 | [docs/getting-started.md](docs/getting-started.md) | Install, trial, first profile, API token |
 | [docs/proxy-setup.md](docs/proxy-setup.md) | Residential proxy best practices |
 | [docs/antifingerprint-checklist.md](docs/antifingerprint-checklist.md) | Canvas, WebGL, WebRTC hardening |
-| [scripts/](scripts/) | Playwright, Puppeteer, API launch examples |
+| [docs/comparisons/](docs/comparisons/) | Multilogin vs top antidetect tools |
+| [docs/platforms/](docs/platforms/) | TikTok, Meta, Amazon farming guides |
+| [docs/playbooks/](docs/playbooks/) | Country-specific MMO playbooks |
+| [docs/awesome-resources.md](docs/awesome-resources.md) | Curated links & community tools |
+| [tools/plan-calculator.mjs](tools/plan-calculator.mjs) | CLI: pick the right plan |
+| [scripts/](scripts/) | Playwright, Puppeteer, Selenium, API |
 | [locales/](locales/) | Short README per language (16 locales) |
 
 <details>
@@ -797,6 +832,8 @@ Essai **2 $ / 3 jours** · Codes **`SAAS50`** · **`MIN50`** · Annuel **~35 % d
 ---
 
 <div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=multilogin-labs&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" height="165" />
 
 ### Ready to scale? · Sẵn sàng scale? · Pronto para escalar?
 

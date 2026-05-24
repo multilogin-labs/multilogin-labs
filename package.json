@@ -7,7 +7,9 @@
   "scripts": {
     "api:launch": "node scripts/api/launch-profile.mjs",
     "playwright:connect": "node scripts/playwright/connect-profile.mjs",
-    "puppeteer:connect": "node scripts/puppeteer/connect-profile.mjs"
+    "puppeteer:connect": "node scripts/puppeteer/connect-profile.mjs",
+    "selenium:connect": "node scripts/selenium/connect-profile.mjs",
+    "plan": "node tools/plan-calculator.mjs"
   },
   "engines": {
     "node": ">=18"

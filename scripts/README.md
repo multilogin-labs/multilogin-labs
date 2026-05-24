@@ -17,6 +17,8 @@ npm install
 | `npm run api:launch` | Start profile via launcher API |
 | `npm run playwright:connect` | Connect Playwright to running profile |
 | `npm run puppeteer:connect` | Connect Puppeteer to running profile |
+| `npm run selenium:connect` | Connect Selenium to running profile |
+| `npm run plan` | Interactive plan recommendation CLI |
 
 Install optional deps when needed:
 

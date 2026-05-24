@@ -16,5 +16,7 @@ jobs:
           test -f README.md
           test -f docs/getting-started.md
           test -f scripts/api/launch-profile.mjs
-          test -f locales/README.vi.md
+          test -f docs/comparisons/multilogin-vs-adspower.md
+          test -f tools/plan-calculator.mjs
+          test -f scripts/selenium/connect-profile.mjs
           echo "Structure OK"
