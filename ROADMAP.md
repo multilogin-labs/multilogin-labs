@@ -1,29 +1,23 @@
 # Roadmap
 
-Public roadmap for `@multilogin-labs` — star the repo to follow progress.
+## Shipped (v2 content explosion)
 
-## Shipped
-
-- [x] Multilingual README (16 languages) — profile repo optimized
-- [x] Docs: getting started, proxy, antifingerprint
-- [x] Scripts: API, Playwright, Puppeteer, Selenium (Node.js)
-- [x] **Python scripts** — launch, Playwright, Selenium
-- [x] Comparisons vs AdsPower, GoLogin, Octo, **MoreLogin**, **DuoPlus**
-- [x] Platform playbooks: TikTok, Meta, Amazon
-- [x] Country playbooks: VN, BR, ID, **PH, TR, IN**
-- [x] Plan calculator CLI
-- [x] 15 locale README files
+- [x] **SEARCH_INDEX** — 100+ keywords mapped to guides
+- [x] **13 comparisons** — AdsPower through Undetectable
+- [x] **13 platform playbooks** — TikTok through Pinterest
+- [x] **18 country playbooks** — global MMO markets
+- [x] **11 use-case guides** — scraping, airdrop, agency, etc.
+- [x] FAQ · Glossary · Troubleshooting · Docs hub
+- [x] Python + Node scripts (launch, stop, connect)
+- [x] Plan calculator · Proxy check tool
+- [x] 16-language README + 15 locale files
 
 ## Next
 
-- [ ] Profile warmup scheduler script
-- [ ] Proxy health checker CLI
+- [ ] GitHub Pages site mirror
+- [ ] Warmup scheduler CLI
+- [ ] MoreLogin deep-dive (long-form)
+- [ ] Video embed section
 - [ ] GitHub Discussions FAQ
-- [ ] Video walkthrough links
-- [ ] Playbooks: Pakistan, Nigeria, Mexico
 
-## Request a feature
-
-Open an [issue](https://github.com/multilogin-labs/multilogin-labs/issues/new/choose) or PR — see [CONTRIBUTING.md](../CONTRIBUTING.md).
-
-**Partner pricing:** [multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
+**Partner:** [multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)

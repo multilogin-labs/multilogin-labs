@@ -25,16 +25,30 @@
 
 | | Resource | Link |
 |---|---|---|
+| 🔍 | **Search anything** | [**docs/SEARCH_INDEX.md**](docs/SEARCH_INDEX.md) — 100+ keywords |
+| 📚 | **Full docs hub** | [docs/README.md](docs/README.md) |
 | 🚀 | **Getting started** | [docs/getting-started.md](docs/getting-started.md) |
-| 📊 | **Plan calculator** | [tools/plan-calculator.mjs](tools/plan-calculator.mjs) · `npm run plan` |
-| ⚔️ | **Tool comparisons** | [docs/comparisons/](docs/comparisons/) — AdsPower, GoLogin, Octo, **MoreLogin**, **DuoPlus** |
-| 📱 | **Platform playbooks** | [docs/platforms/](docs/platforms/) |
-| 🌏 | **Country playbooks** | [docs/playbooks/](docs/playbooks/) — VN, BR, ID, **PH, TR, IN** |
-| 🔗 | **Awesome resources** | [docs/awesome-resources.md](docs/awesome-resources.md) |
-| 🤖 | **Automation scripts** | [scripts/](scripts/) · **Python:** [scripts/python/](scripts/python/) |
-| 🌍 | **16 locales** | [locales/](locales/) |
+| ❓ | **FAQ · Glossary · Fixes** | [faq](docs/faq.md) · [glossary](docs/glossary.md) · [troubleshooting](docs/troubleshooting.md) |
+| 📊 | **Plan calculator** | `npm run plan` · [tools/plan-calculator.mjs](tools/plan-calculator.mjs) |
+| ⚔️ | **13 tool comparisons** | [docs/comparisons/](docs/comparisons/) |
+| 📱 | **13 platform playbooks** | [docs/platforms/](docs/platforms/) |
+| 🌏 | **18 country playbooks** | [docs/playbooks/](docs/playbooks/) |
+| 💼 | **11 use-case guides** | [docs/use-cases/](docs/use-cases/) |
+| 🤖 | **Scripts** | [Node](scripts/) · [Python](scripts/python/) |
+| 🌍 | **16 languages** | [locales/](locales/) |
 
-> This repo **`multilogin-labs/multilogin-labs`** matches the GitHub username — it powers the public profile at [github.com/multilogin-labs](https://github.com/multilogin-labs).
+> **`multilogin-labs/multilogin-labs`** = GitHub profile repo → [github.com/multilogin-labs](https://github.com/multilogin-labs)
+
+### Popular searches → answers
+
+| You search… | We have… |
+|---|---|
+| multilogin vs adspower / gologin / octo | [comparisons/](docs/comparisons/) |
+| multilogin tiktok / facebook / amazon | [platforms/](docs/platforms/) |
+| multilogin python / playwright / api | [scripts/](scripts/) |
+| nuôi nick / MMO / antidetect | [playbooks/](docs/playbooks/) · [use-cases/](docs/use-cases/) |
+| multilogin pricing / discount / trial | [faq](docs/faq.md) · **SAAS50** · **MIN50** |
+| account banned / proxy failed | [troubleshooting](docs/troubleshooting.md) |
 
 ---
 
@@ -116,16 +130,18 @@ multilogin-labs/
 │   ├── proxy-setup.md
 │   ├── antifingerprint-checklist.md
 │   ├── awesome-resources.md
-│   ├── comparisons/         # vs AdsPower, GoLogin, Octo, MoreLogin, DuoPlus
-│   ├── platforms/           # TikTok, Meta, Amazon
-│   └── playbooks/           # VN, BR, ID, PH, TR, IN
+│   ├── comparisons/         # 13 tool comparisons
+│   ├── platforms/           # 13 platform playbooks
+│   ├── playbooks/           # 18 country playbooks
+│   ├── use-cases/           # 11 workflow guides
+│   ├── SEARCH_INDEX.md      # keyword index
+│   ├── faq.md · glossary.md · troubleshooting.md
+│   └── README.md            # docs hub
 ├── scripts/
-│   ├── python/              # launch, Playwright, Selenium (IN/CN devs)
-│   ├── api/launch-profile.mjs
-│   ├── playwright/connect-profile.mjs
-│   ├── puppeteer/connect-profile.mjs
-│   └── selenium/connect-profile.mjs
-├── tools/plan-calculator.mjs
+│   ├── python/              # launch, stop, Playwright, Selenium
+│   ├── api/                 # launch + stop
+│   ├── playwright/ · puppeteer/ · selenium/
+├── tools/plan-calculator.mjs · proxy-check.mjs
 ├── requirements.txt         # Python deps
 ├── configs/proxy-template.json
 ├── locales/                 # 15 README summaries
@@ -134,7 +150,9 @@ multilogin-labs/
 
 | Path | Description |
 |---|---|
-| [docs/getting-started.md](docs/getting-started.md) | Install, trial, first profile, API token |
+| [docs/SEARCH_INDEX.md](docs/SEARCH_INDEX.md) | **Search anything** — 100+ keywords |
+| [docs/use-cases/](docs/use-cases/) | Scraping, airdrop, agency, phone farm… |
+| [docs/faq.md](docs/faq.md) | Pricing, trial, plans, API |
 | [docs/proxy-setup.md](docs/proxy-setup.md) | Residential proxy best practices |
 | [docs/antifingerprint-checklist.md](docs/antifingerprint-checklist.md) | Canvas, WebGL, WebRTC hardening |
 | [docs/comparisons/](docs/comparisons/) | Multilogin vs AdsPower, GoLogin, Octo, MoreLogin, DuoPlus |

@@ -21,5 +21,8 @@ jobs:
           test -f docs/comparisons/multilogin-vs-morelogin.md
           test -f docs/playbooks/india.md
           test -f scripts/python/launch_profile.py
-          test -f requirements.txt
+          test -f docs/use-cases/web-scraping.md
+          test -f docs/SEARCH_INDEX.md
+          DOC_COUNT=$(find docs -name '*.md' | wc -l)
+          test "$DOC_COUNT" -ge 60
           echo "Structure OK"

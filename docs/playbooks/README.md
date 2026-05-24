@@ -1,8 +1,8 @@
-# Country playbooks
+# Country playbooks — 18 markets
 
-Market-specific MMO stacks — proxy geo, platforms, and plan picks.
+> [Partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
-| Market | Playbook |
+| Region | Playbook |
 |---|---|
 | 🇻🇳 Vietnam | [vietnam.md](vietnam.md) |
 | 🇧🇷 Brazil | [brazil.md](brazil.md) |
@@ -10,5 +10,17 @@ Market-specific MMO stacks — proxy geo, platforms, and plan picks.
 | 🇵🇭 Philippines | [philippines.md](philippines.md) |
 | 🇹🇷 Turkey | [turkey.md](turkey.md) |
 | 🇮🇳 India | [india.md](india.md) |
+| 🇺🇸 USA | [usa.md](usa.md) |
+| 🇬🇧 UK | [uk.md](uk.md) |
+| 🇵🇰 Pakistan | [pakistan.md](pakistan.md) |
+| 🇳🇬 Nigeria | [nigeria.md](nigeria.md) |
+| 🇲🇽 Mexico | [mexico.md](mexico.md) |
+| 🇪🇬 Egypt | [egypt.md](egypt.md) |
+| 🇺🇦 Ukraine | [ukraine.md](ukraine.md) |
+| 🇵🇱 Poland | [poland.md](poland.md) |
+| 🇯🇵 Japan | [japan.md](japan.md) |
+| 🇰🇷 Korea | [korea.md](korea.md) |
+| 🇹🇭 Thailand | [thailand.md](thailand.md) |
+| 🇨🇳 China diaspora | [china-diaspora.md](china-diaspora.md) |
 
-Full multilingual guide: [README](../../README.md)
+[SEARCH_INDEX](../SEARCH_INDEX.md) · [Locales](../../locales/)
