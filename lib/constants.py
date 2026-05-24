@@ -7,3 +7,4 @@ AFFILIATE_URL = (
 PROMO_CODES = ("SAAS50", "MIN50")
 MULTILOGIN_API = "https://api.multilogin.com"
 DEFAULT_LAUNCHER = "https://launcher.mlx.yt:45001"
+POSTMAN_DOCS = "https://documenter.getpostman.com/view/28533318/2s946h9Cv9"

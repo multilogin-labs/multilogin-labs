@@ -1,5 +1,6 @@
 /**
- * Stop a running Multilogin profile via launcher API.
+ * Stop a Multilogin profile via Launcher API.
+ * GET /api/v1/profile/stop?profile_id=
  */
 import "dotenv/config";
 
@@ -12,13 +13,14 @@ if (!TOKEN || !PROFILE_ID) {
   process.exit(1);
 }
 
-const res = await fetch(`${LAUNCHER}/api/v2/profile/stop`, {
-  method: "POST",
+const url = `${LAUNCHER}/api/v1/profile/stop?${new URLSearchParams({ profile_id: PROFILE_ID })}`;
+
+const res = await fetch(url, {
+  method: "GET",
   headers: {
     Authorization: `Bearer ${TOKEN}`,
-    "Content-Type": "application/json",
+    Accept: "application/json",
   },
-  body: JSON.stringify({ profileId: PROFILE_ID }),
 });
 
 const body = await res.json().catch(() => ({}));

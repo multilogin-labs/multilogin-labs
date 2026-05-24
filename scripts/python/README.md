@@ -1,35 +1,38 @@
 # Python scripts
 
-Automation examples for developers in **India**, **China**, and other Python-first markets.
+Automation for **Multilogin X API** (official Launcher + Cloud API).
 
 ## Setup
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-playwright install chromium   # only for playwright_connect.py
-
 cp .env.example .env
-# MULTILOGIN_TOKEN, MULTILOGIN_PROFILE_ID, MULTILOGIN_DEBUG_PORT
 ```
+
+Required in `.env`:
+- `MULTILOGIN_TOKEN` (automation token recommended)
+- `MULTILOGIN_FOLDER_ID` + `MULTILOGIN_PROFILE_ID` for start
 
 ## Scripts
 
 | File | Description |
 |---|---|
-| [launch_profile.py](launch_profile.py) | Start profile via launcher API (stdlib + dotenv) |
-| [playwright_connect.py](playwright_connect.py) | Attach Playwright over CDP |
-| [selenium_connect.py](selenium_connect.py) | Attach Selenium to debugger port |
+| [signin.py](signin.py) | `POST /user/signin` → tokens |
+| [launch_profile.py](launch_profile.py) | Launcher v2 start (playwright/puppeteer/selenium) |
+| [stop_profile.py](stop_profile.py) | Launcher v1 stop |
+| [playwright_connect.py](playwright_connect.py) | Attach Playwright to CDP port |
+| [selenium_connect.py](selenium_connect.py) | Attach Selenium |
 
-## Run
+## Client library
 
-```bash
-python scripts/python/launch_profile.py
-python scripts/python/playwright_connect.py
-python scripts/python/selenium_connect.py
+Use [lib/mlx_client.py](../../lib/mlx_client.py) for all 90 endpoints — see [docs/api/](../../docs/api/).
+
+```python
+from lib.mlx_client import MLXClient
+
+client = MLXClient.from_env()
+result = client.start_profile(folder_id, profile_id, automation_type="playwright")
 ```
 
-Node.js equivalents: [../api/](../api/) · [../playwright/](../playwright/)
-
-Partner pricing: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
+Docs: [api/endpoints-index.md](../../docs/api/endpoints-index.md)

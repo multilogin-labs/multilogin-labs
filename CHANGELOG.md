@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.0.0] — 2026-05-24
+
+### Added — Multilogin X API knowledge base (from official Postman export)
+- **docs/api/** — 90 endpoints, 11 categories, 288 files
+- Per-endpoint SEO pages + Python/Node example stubs
+- [lib/mlx_client.py](../lib/mlx_client.py) — signin, start/stop, search, quick profile
+- Fixed launcher scripts to official v2 start + v1 stop paths
+- `MULTILOGIN_FOLDER_ID` in `.env.example`
+- [tools/generate_api_docs.py](../tools/generate_api_docs.py)
+
+### Removed
+- Raw HTML export (content migrated into structured docs)
+
 ## [2.0.0] — 2026-05-24
 
 ### Added — search-first expansion

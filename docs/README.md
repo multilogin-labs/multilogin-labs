@@ -8,6 +8,7 @@ Everything in this repo — organized for search, SEO, and quick navigation.
 
 | Doc | For |
 |---|---|
+| [api/README.md](api/README.md) | **Multilogin X API — 90 endpoints** |
 | [getting-started.md](getting-started.md) | First profile, API token, scripts |
 | [faq.md](faq.md) | 50+ common questions |
 | [glossary.md](glossary.md) | Antidetect & MMO terminology |

@@ -11,52 +11,60 @@
 
 ## 2. Install the app
 
-Download from [multilogin.com/download](https://multilogin.com/download/) and sign in.
+Download from [multilogin.com/download](https://multilogin.com/download/) and sign in. **Keep the app running** for Launcher API calls.
 
 ## 3. Create your first profile
 
-1. **Create profile** → choose Mimic (Chromium) or Stealthfox (Firefox).
-2. Set fingerprint mode to **automatic** (based on real-user data).
-3. Attach a proxy (built-in Multilogin proxy or your own residential).
-4. Save and **Launch** once manually to verify the session.
+1. **Create profile** → Mimic or Stealthfox.
+2. Fingerprint **automatic**.
+3. Attach proxy (built-in or your own).
+4. Note **folder_id** and **profile_id** (DevTools or API search).
 
 ## 4. Get your API token
 
-1. App → **Settings** → **API** (or Workspace → API).
-2. Copy the bearer token into `.env`:
+**Option A — Automation token (recommended):**  
+`GET https://api.multilogin.com/workspace/automation_token`  
+Or: App → Settings → API. Requires **Pro 10+**.
+
+**Option B — Sign in:**  
+`POST https://api.multilogin.com/user/signin`  
+See [api/authentication.md](api/authentication.md).
 
 ```bash
 cp .env.example .env
-# Edit MULTILOGIN_TOKEN and MULTILOGIN_PROFILE_ID
+# MULTILOGIN_TOKEN, MULTILOGIN_FOLDER_ID, MULTILOGIN_PROFILE_ID
 ```
 
-Automation token is available from **Pro 10** and above.
+## 5. Start a profile (official Launcher API)
 
-## 5. Run a script from this repo
-
-**Node.js**
-
-```bash
-npm install
-npm run api:launch
-npm run playwright:connect
+```http
+GET https://launcher.mlx.yt:45001/api/v2/profile/f/{folder_id}/p/{profile_id}/start?automation_type=playwright
+Authorization: Bearer YOUR_TOKEN
 ```
 
-**Python** (popular in India, China, global dev shops)
+**Python**
 
 ```bash
-python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python scripts/python/launch_profile.py
-python scripts/python/playwright_connect.py
 ```
 
-See [scripts/python/README.md](../scripts/python/README.md).
+**Node**
 
-## 6. Next steps
+```bash
+npm run api:launch
+```
 
+Full reference: [api/endpoints/start-browser-profile.md](api/endpoints/start-browser-profile.md)
+
+## 6. Connect automation
+
+Response includes `data.port` — connect Playwright/Puppeteer/Selenium to that CDP port.
+
+## 7. Next steps
+
+- [API hub — 90 endpoints](api/README.md)
+- [Endpoints index](api/endpoints-index.md)
+- [Python client](../lib/mlx_client.py)
 - [Proxy setup](proxy-setup.md)
-- [Antifingerprint checklist](antifingerprint-checklist.md)
-- [Country playbooks](playbooks/) — VN, BR, ID, PH, TR, IN
-- [Tool comparisons](comparisons/) — MoreLogin, DuoPlus, AdsPower…
-- [Official API docs](https://multilogin.com/help/en_US/api)
+- [SEARCH_INDEX](SEARCH_INDEX.md)

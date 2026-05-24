@@ -25,7 +25,8 @@
 
 | | Resource | Link |
 |---|---|---|
-| 🔍 | **Search anything** | [**docs/SEARCH_INDEX.md**](docs/SEARCH_INDEX.md) — 100+ keywords |
+| 🔍 | **Search anything** | [**docs/SEARCH_INDEX.md**](docs/SEARCH_INDEX.md) |
+| 📡 | **Multilogin X API** | [**docs/api/**](docs/api/) — **90 endpoints**, Python client |
 | 📚 | **Full docs hub** | [docs/README.md](docs/README.md) |
 | 🚀 | **Getting started** | [docs/getting-started.md](docs/getting-started.md) |
 | ❓ | **FAQ · Glossary · Fixes** | [faq](docs/faq.md) · [glossary](docs/glossary.md) · [troubleshooting](docs/troubleshooting.md) |
@@ -45,7 +46,7 @@
 |---|---|
 | multilogin vs adspower / gologin / octo | [comparisons/](docs/comparisons/) |
 | multilogin tiktok / facebook / amazon | [platforms/](docs/platforms/) |
-| multilogin python / playwright / api | [scripts/](scripts/) |
+| multilogin python / playwright / api | [docs/api/](docs/api/) · [scripts/](scripts/) |
 | nuôi nick / MMO / antidetect | [playbooks/](docs/playbooks/) · [use-cases/](docs/use-cases/) |
 | multilogin pricing / discount / trial | [faq](docs/faq.md) · **SAAS50** · **MIN50** |
 | account banned / proxy failed | [troubleshooting](docs/troubleshooting.md) |

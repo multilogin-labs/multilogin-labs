@@ -4,6 +4,29 @@ Use **Ctrl+F** on this page or GitHub repo search. Every topic links to a guide 
 
 > Partner link: [multilogin.com/pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
+## Multilogin X API (90 endpoints)
+
+| Search term | Guide |
+|---|---|
+| multilogin x api | [api/README.md](api/README.md) |
+| multilogin api documentation | [api/overview.md](api/overview.md) |
+| multilogin api endpoints | [api/endpoints-index.md](api/endpoints-index.md) |
+| multilogin api authentication | [api/authentication.md](api/authentication.md) |
+| multilogin automation token | [api/endpoints/workspace-automation-token.md](api/endpoints/workspace-automation-token.md) |
+| multilogin api start profile | [api/endpoints/start-browser-profile.md](api/endpoints/start-browser-profile.md) |
+| multilogin api stop profile | [api/endpoints/stop-browser-profile.md](api/endpoints/stop-browser-profile.md) |
+| multilogin quick profile | [api/endpoints/start-quick-profile-v3.md](api/endpoints/start-quick-profile-v3.md) |
+| multilogin profile create api | [api/endpoints/profile-create.md](api/endpoints/profile-create.md) |
+| multilogin profile search | [api/endpoints/profile-search.md](api/endpoints/profile-search.md) |
+| multilogin api python | [../lib/mlx_client.py](../lib/mlx_client.py) · [api/examples/python/](api/examples/python/) |
+| multilogin api postman | [api/reference-full.md](api/reference-full.md) |
+| multilogin launcher api | [api/categories/launcher.md](api/categories/launcher.md) |
+| multilogin api signin | [api/endpoints/user-sign-in.md](api/endpoints/user-sign-in.md) |
+| multilogin refresh token | [api/endpoints/user-refresh-token-switch-workspace.md](api/endpoints/user-refresh-token-switch-workspace.md) |
+| multilogin api 2fa | [api/categories/2fa.md](api/categories/2fa.md) |
+| multilogin api proxy | [api/categories/proxy.md](api/categories/proxy.md) |
+| multilogin api keywords (all) | [api/SEARCH_KEYWORDS.md](api/SEARCH_KEYWORDS.md) |
+
 ## Antidetect & browser
 
 | Search term | Guide |

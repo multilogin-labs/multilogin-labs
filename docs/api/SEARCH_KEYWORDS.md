@@ -1,0 +1,92 @@
+# API SEO Keywords
+
+- multilogin start browser profile → endpoints/start-browser-profile.md
+- multilogin start quick profile v3 → endpoints/start-quick-profile-v3.md
+- multilogin start quick profile deprecated → endpoints/start-quick-profile-deprecated.md
+- multilogin stop browser profile → endpoints/stop-browser-profile.md
+- multilogin stop all profiles → endpoints/stop-all-profiles.md
+- multilogin get version → endpoints/get-version.md
+- multilogin get profile status → endpoints/get-profile-status.md
+- multilogin get all profiles status → endpoints/get-all-profiles-status.md
+- multilogin get all quick profiles status → endpoints/get-all-quick-profiles-status.md
+- multilogin loaded browser cores → endpoints/loaded-browser-cores.md
+- multilogin browser core list → endpoints/browser-core-list.md
+- multilogin load browser core → endpoints/load-browser-core.md
+- multilogin delete browser core → endpoints/delete-browser-core.md
+- multilogin validate proxy → endpoints/validate-proxy.md
+- multilogin cookie import → endpoints/cookie-import.md
+- multilogin cookie export → endpoints/cookie-export.md
+- multilogin convert qbp to profile → endpoints/convert-qbp-to-profile.md
+- multilogin get qbp status → endpoints/get-qbp-status.md
+- multilogin user sign in → endpoints/user-sign-in.md
+- multilogin user refresh token switch workspace → endpoints/user-refresh-token-switch-workspace.md
+- multilogin user revoke token → endpoints/user-revoke-token.md
+- multilogin user change password → endpoints/user-change-password.md
+- multilogin user workspaces → endpoints/user-workspaces.md
+- multilogin user token list → endpoints/user-token-list.md
+- multilogin workspace restrictions → endpoints/workspace-restrictions.md
+- multilogin workspace folders → endpoints/workspace-folders.md
+- multilogin workspace folders for user → endpoints/workspace-folders-for-user.md
+- multilogin workspace statistics → endpoints/workspace-statistics.md
+- multilogin workspace automation token → endpoints/workspace-automation-token.md
+- multilogin workspace create folder → endpoints/workspace-create-folder.md
+- multilogin workspace update folder → endpoints/workspace-update-folder.md
+- multilogin workspace remove folders → endpoints/workspace-remove-folders.md
+- multilogin workspace leave → endpoints/workspace-leave.md
+- multilogin profile create → endpoints/profile-create.md
+- multilogin profile search → endpoints/profile-search.md
+- multilogin profile remove → endpoints/profile-remove.md
+- multilogin profile update → endpoints/profile-update.md
+- multilogin profile move → endpoints/profile-move.md
+- multilogin profile partial update → endpoints/profile-partial-update.md
+- multilogin profile restore → endpoints/profile-restore.md
+- multilogin profile metas → endpoints/profile-metas.md
+- multilogin profile summary → endpoints/profile-summary.md
+- multilogin profile clone → endpoints/profile-clone.md
+- multilogin profile convert → endpoints/profile-convert.md
+- multilogin screen resolution → endpoints/screen-resolution.md
+- multilogin unlock locked profiles → endpoints/unlock-locked-profiles.md
+- multilogin generate proxy → endpoints/generate-proxy.md
+- multilogin fetch proxy data → endpoints/fetch-proxy-data.md
+- multilogin target website list → endpoints/target-website-list.md
+- multilogin create cookies metadata → endpoints/create-cookies-metadata.md
+- multilogin cookies list → endpoints/cookies-list.md
+- multilogin update cookies metadata → endpoints/update-cookies-metadata.md
+- multilogin start browser profile with selenium → endpoints/start-browser-profile-with-selenium.md
+- multilogin start script runner → endpoints/start-script-runner.md
+- multilogin stop script runner → endpoints/stop-script-runner.md
+- multilogin script list → endpoints/script-list.md
+- multilogin profile export → endpoints/profile-export.md
+- multilogin export status by profile → endpoints/export-status-by-profile.md
+- multilogin export status all → endpoints/export-status-all.md
+- multilogin profile import → endpoints/profile-import.md
+- multilogin import status by profile → endpoints/import-status-by-profile.md
+- multilogin import status all → endpoints/import-status-all.md
+- multilogin upload object → endpoints/upload-object.md
+- multilogin create and upload → endpoints/create-and-upload.md
+- multilogin object profile usages → endpoints/object-profile-usages.md
+- multilogin get list of object types → endpoints/get-list-of-object-types.md
+- multilogin get statistics for objects → endpoints/get-statistics-for-objects.md
+- multilogin get objects meta → endpoints/get-objects-meta.md
+- multilogin get object meta by id → endpoints/get-object-meta-by-id.md
+- multilogin delete object → endpoints/delete-object.md
+- multilogin restore object → endpoints/restore-object.md
+- multilogin cloud to local → endpoints/cloud-to-local.md
+- multilogin local to cloud → endpoints/local-to-cloud.md
+- multilogin download object → endpoints/download-object.md
+- multilogin create extension → endpoints/create-extension.md
+- multilogin enable extension → endpoints/enable-extension.md
+- multilogin disable extension → endpoints/disable-extension.md
+- multilogin list of objects per profile → endpoints/list-of-objects-per-profile.md
+- multilogin export bookmarks → endpoints/export-bookmarks.md
+- multilogin import bookmarks → endpoints/import-bookmarks.md
+- multilogin copy bookmarks → endpoints/copy-bookmarks.md
+- multilogin set up 2fa → endpoints/set-up-2fa.md
+- multilogin enable 2fa → endpoints/enable-2fa.md
+- multilogin verify 2fa → endpoints/verify-2fa.md
+- multilogin set up new device for 2fa → endpoints/set-up-new-device-for-2fa.md
+- multilogin get devices for 2fa → endpoints/get-devices-for-2fa.md
+- multilogin get backup codes for 2fa → endpoints/get-backup-codes-for-2fa.md
+- multilogin revoke device for 2fa → endpoints/revoke-device-for-2fa.md
+- multilogin enable disable 2fa for workspace → endpoints/enable-disable-2fa-for-workspace.md
+- multilogin disable 2fa → endpoints/disable-2fa.md
