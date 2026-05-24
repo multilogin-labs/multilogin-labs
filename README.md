@@ -32,6 +32,10 @@
 | 🇹🇭 | **ไทย** — Thailand | [ไทย ↓](#-ไทย) |
 | 🇮🇳 | **हिन्दी** — India | [हिन्दी ↓](#-हिन्दी) |
 | 🇸🇦 | **العربية** — MENA | [العربية ↓](#-العربية) |
+| 🇵🇭 | **Filipino** — Philippines | [Filipino ↓](#-filipino) |
+| 🇫🇷 | **Français** — France, Africa | [Français ↓](#-français) |
+
+**Locale files:** [`locales/`](locales/) · Full guides in [`docs/`](docs/) · Scripts in [`scripts/`](scripts/)
 
 ---
 
@@ -81,7 +85,28 @@ Multi-account (FB, Google, TikTok, Amazon) · Automation & scraping · Cloud pho
 
 ### What's in this repo
 
-Browser automation scripts · Anti-fingerprint guides · Account farming playbooks · Proxy configs · API snippets
+```
+multilogin-labs/
+├── docs/                    # Guides (EN)
+│   ├── getting-started.md
+│   ├── proxy-setup.md
+│   └── antifingerprint-checklist.md
+├── scripts/
+│   ├── api/launch-profile.mjs
+│   ├── playwright/connect-profile.mjs
+│   └── puppeteer/connect-profile.mjs
+├── configs/proxy-template.json
+├── locales/                 # README summaries per language
+└── package.json
+```
+
+| Path | Description |
+|---|---|
+| [docs/getting-started.md](docs/getting-started.md) | Install, trial, first profile, API token |
+| [docs/proxy-setup.md](docs/proxy-setup.md) | Residential proxy best practices |
+| [docs/antifingerprint-checklist.md](docs/antifingerprint-checklist.md) | Canvas, WebGL, WebRTC hardening |
+| [scripts/](scripts/) | Playwright, Puppeteer, API launch examples |
+| [locales/](locales/) | Short README per language (16 locales) |
 
 <details>
 <summary><strong>Quick start: API connection</strong></summary>
@@ -684,6 +709,78 @@ Preisgekrönte **Multi-Account-Plattform** — Antidetect-Profile, echte Android
 **استخدامات MENA:** حسابات متعددة · تجارة إلكترونية · تسويق · scraping · وكالات
 
 **[→ تجربة $2 + كود `SAAS50` / `MIN50`](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**
+
+---
+
+<a id="filipino"></a>
+## 🇵🇭 Filipino
+
+**Open-source resources para sa antidetect browser, multi-account, cloud phone, at MMO automation.**
+
+**[→ Multilogin partner pricing](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**
+
+### Bakit Multilogin?
+
+Pinakamahusay na **multi-account platform** — antidetect profiles, tunay na Android cloud phones, built-in residential proxy, full API.
+
+| Feature | Benepisyo |
+|---|---|
+| **Antidetect** | Mimic & Stealthfox, tunay na user fingerprint |
+| **Cloud phone** | Tunay na Android hardware, hindi emulator |
+| **Proxy** | Monthly premium traffic, rollover |
+| **Automation** | API + Puppeteer, Playwright, Selenium |
+| **Team** | Profile sharing, bulk clone |
+
+### Partner offer
+
+Trial **$2 / 3 araw** · Codes **`SAAS50`** · **`MIN50`** · Annual **~35% off**
+
+| Plan | Profiles | Annual | Monthly |
+|---|---:|---:|---:|
+| Pro 10 | 10 | $7.08/mo | $11/mo |
+| Pro 50 | 50 | $19.17/mo | $29/mo |
+| Pro 100 | 100 | $26.67/mo | $40/mo |
+| Business | 300+ | $57.08/mo | $89/mo |
+
+**PH use cases:** Social media farming · Shopee/Lazada · OFW remittance ads · BPO side hustle · Agency
+
+**[→ $2 trial + partner link](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**
+
+---
+
+<a id="français"></a>
+## 🇫🇷 Français
+
+**Ressources open-source pour navigateur antidetect, multi-comptes, cloud phone et automatisation MMO.**
+
+**[→ Tarifs partenaire Multilogin](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**
+
+### Pourquoi Multilogin ?
+
+Plateforme **multi-comptes** primée — profils antidetect, cloud phones Android réels, proxies résidentiels, API complète.
+
+| Fonction | Avantage |
+|---|---|
+| **Antidetect** | Mimic & Stealthfox, empreintes utilisateur réelles |
+| **Cloud phone** | Matériel Android réel, pas d'émulateur |
+| **Proxies** | Trafic premium mensuel avec report |
+| **Automatisation** | API + Puppeteer, Playwright, Selenium |
+| **Équipe** | Partage de profils, clonage en masse |
+
+### Offre partenaire
+
+Essai **2 $ / 3 jours** · Codes **`SAAS50`** · **`MIN50`** · Annuel **~35 % de réduction**
+
+| Plan | Profils | Annuel | Mensuel |
+|---|---:|---:|---:|
+| Pro 10 | 10 | 7,08 $/mois | 11 $/mois |
+| Pro 50 | 50 | 19,17 $/mois | 29 $/mois |
+| Pro 100 | 100 | 26,67 $/mois | 40 $/mois |
+| Business | 300+ | 57,08 $/mois | 89 $/mois |
+
+**Cas d'usage FR/AF:** E-commerce · Social ads · Scraping · Agences · Dropshipping
+
+**[→ Essai 2 $ + lien partenaire](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**
 
 ---
 

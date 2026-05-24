@@ -1,0 +1,36 @@
+{
+  "name": "multilogin-labs",
+  "version": "1.0.0",
+  "description": "Open-source Multilogin automation scripts, guides, and MMO resources",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "api:launch": "node scripts/api/launch-profile.mjs",
+    "playwright:connect": "node scripts/playwright/connect-profile.mjs",
+    "puppeteer:connect": "node scripts/puppeteer/connect-profile.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.49.0",
+    "puppeteer-core": "^23.0.0"
+  },
+  "keywords": [
+    "multilogin",
+    "antidetect",
+    "multi-account",
+    "cloud-phone",
+    "playwright",
+    "puppeteer",
+    "mmo"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/multilogin-labs/multilogin-labs.git"
+  }
+}

@@ -1,0 +1,20 @@
+name: Docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify repo structure
+        run: |
+          test -f README.md
+          test -f docs/getting-started.md
+          test -f scripts/api/launch-profile.mjs
+          test -f locales/README.vi.md
+          echo "Structure OK"

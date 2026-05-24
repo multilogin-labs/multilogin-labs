@@ -1,0 +1,12 @@
+{
+  "type": "http",
+  "host": "proxy.example.com",
+  "port": 8080,
+  "username": "user-country-us-session-abc123",
+  "password": "your_password",
+  "notes": {
+    "session": "Use sticky session IDs in username when provider supports it",
+    "geo": "Match timezone and language in Multilogin profile to proxy country",
+    "verify": "Always run proxy check inside Multilogin before first launch"
+  }
+}
