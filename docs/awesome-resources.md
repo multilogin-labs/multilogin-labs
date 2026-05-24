@@ -16,9 +16,9 @@ Curated links for multi-account operators, developers, and MMO teams.
 - [Getting started](getting-started.md)
 - [Comparisons](comparisons/)
 - [Platform playbooks](platforms/)
-- [Country playbooks](playbooks/)
+- [Country playbooks](playbooks/) — VN, BR, ID, PH, TR, IN
 - [Plan calculator](../tools/plan-calculator.mjs)
-- [Automation scripts](../scripts/)
+- [Automation scripts](../scripts/) · [Python](../scripts/python/)
 
 ## Community topics (GitHub search)
 
@@ -33,8 +33,8 @@ Add at **github.com/multilogin-labs/multilogin-labs/settings** → Topics:
 
 ```
 multilogin, antidetect, anti-detect-browser, multi-account, cloud-phone,
-browser-automation, playwright, puppeteer, selenium, mmo, affiliate-marketing,
-proxy, fingerprint, tiktok, facebook-ads, dropshipping
+browser-automation, playwright, puppeteer, selenium, python, mmo, affiliate-marketing,
+proxy, fingerprint, tiktok, facebook-ads, dropshipping, morelogin, duoplus
 ```
 
 ## Partner codes

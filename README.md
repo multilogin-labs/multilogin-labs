@@ -27,11 +27,11 @@
 |---|---|---|
 | 🚀 | **Getting started** | [docs/getting-started.md](docs/getting-started.md) |
 | 📊 | **Plan calculator** | [tools/plan-calculator.mjs](tools/plan-calculator.mjs) · `npm run plan` |
-| ⚔️ | **vs AdsPower / GoLogin / Octo** | [docs/comparisons/](docs/comparisons/) |
+| ⚔️ | **Tool comparisons** | [docs/comparisons/](docs/comparisons/) — AdsPower, GoLogin, Octo, **MoreLogin**, **DuoPlus** |
 | 📱 | **Platform playbooks** | [docs/platforms/](docs/platforms/) |
-| 🌏 | **Country playbooks** | [docs/playbooks/](docs/playbooks/) |
+| 🌏 | **Country playbooks** | [docs/playbooks/](docs/playbooks/) — VN, BR, ID, **PH, TR, IN** |
 | 🔗 | **Awesome resources** | [docs/awesome-resources.md](docs/awesome-resources.md) |
-| 🤖 | **Automation scripts** | [scripts/](scripts/) |
+| 🤖 | **Automation scripts** | [scripts/](scripts/) · **Python:** [scripts/python/](scripts/python/) |
 | 🌍 | **16 locales** | [locales/](locales/) |
 
 > This repo **`multilogin-labs/multilogin-labs`** matches the GitHub username — it powers the public profile at [github.com/multilogin-labs](https://github.com/multilogin-labs).
@@ -116,15 +116,17 @@ multilogin-labs/
 │   ├── proxy-setup.md
 │   ├── antifingerprint-checklist.md
 │   ├── awesome-resources.md
-│   ├── comparisons/         # vs AdsPower, GoLogin, Octo
+│   ├── comparisons/         # vs AdsPower, GoLogin, Octo, MoreLogin, DuoPlus
 │   ├── platforms/           # TikTok, Meta, Amazon
-│   └── playbooks/           # VN, BR, ID market playbooks
-├── tools/plan-calculator.mjs
+│   └── playbooks/           # VN, BR, ID, PH, TR, IN
 ├── scripts/
+│   ├── python/              # launch, Playwright, Selenium (IN/CN devs)
 │   ├── api/launch-profile.mjs
 │   ├── playwright/connect-profile.mjs
 │   ├── puppeteer/connect-profile.mjs
 │   └── selenium/connect-profile.mjs
+├── tools/plan-calculator.mjs
+├── requirements.txt         # Python deps
 ├── configs/proxy-template.json
 ├── locales/                 # 15 README summaries
 └── package.json
@@ -135,12 +137,13 @@ multilogin-labs/
 | [docs/getting-started.md](docs/getting-started.md) | Install, trial, first profile, API token |
 | [docs/proxy-setup.md](docs/proxy-setup.md) | Residential proxy best practices |
 | [docs/antifingerprint-checklist.md](docs/antifingerprint-checklist.md) | Canvas, WebGL, WebRTC hardening |
-| [docs/comparisons/](docs/comparisons/) | Multilogin vs top antidetect tools |
+| [docs/comparisons/](docs/comparisons/) | Multilogin vs AdsPower, GoLogin, Octo, MoreLogin, DuoPlus |
 | [docs/platforms/](docs/platforms/) | TikTok, Meta, Amazon farming guides |
-| [docs/playbooks/](docs/playbooks/) | Country-specific MMO playbooks |
+| [docs/playbooks/](docs/playbooks/) | VN, BR, ID, PH, TR, IN market playbooks |
 | [docs/awesome-resources.md](docs/awesome-resources.md) | Curated links & community tools |
 | [tools/plan-calculator.mjs](tools/plan-calculator.mjs) | CLI: pick the right plan |
-| [scripts/](scripts/) | Playwright, Puppeteer, Selenium, API |
+| [scripts/python/](scripts/python/) | Python — launch, Playwright, Selenium |
+| [scripts/](scripts/) | Node — Playwright, Puppeteer, Selenium, API |
 | [locales/](locales/) | Short README per language (16 locales) |
 
 <details>

@@ -18,5 +18,8 @@ jobs:
           test -f scripts/api/launch-profile.mjs
           test -f docs/comparisons/multilogin-vs-adspower.md
           test -f tools/plan-calculator.mjs
-          test -f scripts/selenium/connect-profile.mjs
+          test -f docs/comparisons/multilogin-vs-morelogin.md
+          test -f docs/playbooks/india.md
+          test -f scripts/python/launch_profile.py
+          test -f requirements.txt
           echo "Structure OK"

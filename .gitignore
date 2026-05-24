@@ -5,3 +5,6 @@ node_modules/
 .DS_Store
 dist/
 .cache/
+.venv/
+__pycache__/
+*.pyc

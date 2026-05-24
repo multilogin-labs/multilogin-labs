@@ -4,7 +4,7 @@ Thanks for helping grow Multilogin Labs.
 
 ## What to contribute
 
-- Automation scripts (Playwright, Puppeteer, Selenium, API)
+- Automation scripts (Playwright, Puppeteer, Selenium, API — **Node.js or Python**)
 - Proxy and fingerprint guides
 - Translations in `locales/`
 - Bug fixes and doc improvements

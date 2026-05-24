@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0] — 2026-05-24
+
+### Added
+- Python scripts: `launch_profile.py`, `playwright_connect.py`, `selenium_connect.py`
+- `requirements.txt` and `lib/constants.py`
+- Comparisons: Multilogin vs MoreLogin, vs DuoPlus
+- Country playbooks: Philippines, Turkey, India
+
 ## [1.1.0] — 2026-05-24
 
 ### Added

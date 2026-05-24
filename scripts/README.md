@@ -2,6 +2,17 @@
 
 Examples for automating Multilogin profiles. Requires an active subscription with API access (Pro 10+).
 
+## Python
+
+For **India / China / Python-first teams** → [python/README.md](python/README.md)
+
+```bash
+pip install -r requirements.txt
+python scripts/python/launch_profile.py
+```
+
+## Node.js
+
 ## Setup
 
 ```bash

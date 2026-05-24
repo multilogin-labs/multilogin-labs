@@ -34,16 +34,29 @@ Automation token is available from **Pro 10** and above.
 
 ## 5. Run a script from this repo
 
+**Node.js**
+
 ```bash
 npm install
-# Optional: npm install playwright puppeteer-core
-
 npm run api:launch
 npm run playwright:connect
 ```
+
+**Python** (popular in India, China, global dev shops)
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/python/launch_profile.py
+python scripts/python/playwright_connect.py
+```
+
+See [scripts/python/README.md](../scripts/python/README.md).
 
 ## 6. Next steps
 
 - [Proxy setup](proxy-setup.md)
 - [Antifingerprint checklist](antifingerprint-checklist.md)
+- [Country playbooks](playbooks/) — VN, BR, ID, PH, TR, IN
+- [Tool comparisons](comparisons/) — MoreLogin, DuoPlus, AdsPower…
 - [Official API docs](https://multilogin.com/help/en_US/api)
