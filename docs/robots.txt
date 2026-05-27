@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://multilogin-labs.github.io/multilogin-labs/sitemap.xml

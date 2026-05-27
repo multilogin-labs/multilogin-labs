@@ -1,30 +1,69 @@
 # Multilogin vs Octo Browser
 
-> [Try Multilogin — partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
+> [Partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · Codes **SAAS50** · **MIN50**
+
+**Octo Browser** is European antidetect browser with clean UI.
+
+## Feature comparison
 
 | Feature | Multilogin | Octo Browser |
 |---|---|---|
-| Cloud Android phones | ✅ | ❌ |
-| Dual browser cores | Mimic + Stealthfox | Chromium |
-| Included proxy traffic | ✅ monthly bonus | BYO proxy |
-| API automation | ✅ RPM 50–100 | ✅ |
-| Profile templates & bulk | ✅ | ✅ |
-| Award-winning support | 24/7 live chat | Varies |
+| Real Android cloud phones | ✅ Hardware-backed | Limited / varies |
+| Mimic + Stealthfox browsers | ✅ | Usually single engine |
+| Built-in proxy GB/month | ✅ Pro plans | Often BYO |
+| [90+ API endpoints](../api/endpoints-index.md) | ✅ | Varies |
+| Playwright / Puppeteer / Selenium | ✅ Launcher API | Partial |
+| Profile clone & import/export | ✅ | Varies |
+| Business scale (10k profiles) | ✅ | Tiered |
+| Team unlimited seats | ✅ Business | Tiered |
+| 2FA & GDPR | ✅ | Check vendor |
+| Trial | **$2 / 3 days** | Varies |
 
 ## When Multilogin wins
 
-- Operations span **web + mobile** (not browser-only).
-- You want **residential proxy GB** bundled instead of managing another vendor.
-- **Stealthfox** needed for Firefox-fingerprint diversity.
-- Scaling past 100 profiles toward **Business / agency** tiers.
+- **Full stack:** browser + cloud phone + proxy + [API automation](../api/quick-start.md) in one vendor.
+- **Mobile + web:** TikTok/Instagram app flows via [cloud phone](../use-cases/phone-farming.md) — not Strong browser product; mobile/cloud phone less central than Multilogin.
+- **Agency ops:** folders, templates, [profile clone](../api/endpoints/profile-clone.md), team seats.
+- **Developers:** [Python client](../../lib/mlx_client.py), [cookbook](../api/cookbook/), 90 documented endpoints.
 
-## When Octo may fit
+## When Octo Browser may fit
 
-- Chromium-only workflows with self-managed proxies.
-- Team already invested in Octo’s UI and profile library.
+- You only need a narrow subset of features and already run Octo Browser end-to-end.
+- Budget constraints for **browser-only** work without mobile.
+
+## Pricing angle
+
+Multilogin Pro 10 from ~$7.08/mo (annual) includes API + proxy bonus. Compare total cost: Octo Browser license **+** separate proxy **+** mobile tool if needed.
+
+## Migration tip
+
+1. Export profiles from Octo Browser (if supported).
+2. [Import via API](../api/endpoints/profile-import.md) into Multilogin.
+3. Assign [built-in or custom proxy](../proxy-setup.md).
+4. Start with [automation token](../api/endpoints/workspace-automation-token.md).
+
+
+## FAQ
+
+**Can I migrate from Octo Browser?**  
+Yes — export cookies/profiles where supported, then [import cookies](../api/cookbook/09-import-cookies.md). See [migration guides](../guides/).
+
+**Does Multilogin have a cheaper trial?**  
+**$2 for 3 days** — 5 profiles, API, proxy, mobile minutes. Codes **SAAS50** / **MIN50**.
+
+**Which is better for TikTok — Octo Browser or Multilogin?**  
+For app-based TikTok, Multilogin **cloud phone** (real Android) beats emulator-only stacks.
+
+**API comparison?**  
+Multilogin documents **90 endpoints** in this repo: [endpoints index](../api/endpoints-index.md).
+
+## Search keywords
+
+- multilogin vs octo browser
+- octo browser alternative
 
 ## Verdict
 
-Octo is a solid antidetect browser. Multilogin adds **cloud phones, proxy bundles, and dual engines** — the upgrade path for teams outgrowing browser-only tools.
+For **2026 multi-account operations** needing web + mobile + API, Multilogin is the more complete platform vs **Octo Browser**.
 
-**[→ $2 trial · SAAS50 · MIN50](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**
+**[→ $2 trial + partner discount](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**

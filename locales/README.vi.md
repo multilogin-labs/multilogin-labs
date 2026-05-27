@@ -10,4 +10,4 @@ Kho open-source: nuôi nick, antidetect browser, cloud phone, automation MMO.
 | Mã giảm | `SAAS50` · `MIN50` |
 | Trả năm | Tiết kiệm ~35% |
 
-[Hướng dẫn đầy đủ](../README.md#-tiếng-việt) · [Bắt đầu](../docs/getting-started.md) · [Scripts](../scripts/)
+[Hướng dẫn đầy đủ](../README.md#-tiếng-việt) · [Bắt đầu](../docs/getting-started.md) · [55+ guides](../docs/guides/) · [API cheatsheet](../docs/api/CHEATSHEET.md) · [So sánh 16 tool](../docs/comparisons/comparison-matrix.md) · [Scripts](../scripts/)

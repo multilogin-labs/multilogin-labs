@@ -26,16 +26,19 @@
 | | Resource | Link |
 |---|---|---|
 | 🔍 | **Search anything** | [**docs/SEARCH_INDEX.md**](docs/SEARCH_INDEX.md) |
-| 📡 | **Multilogin X API** | [**docs/api/**](docs/api/) — 90 endpoints · [quick-start](docs/api/quick-start.md) · [cookbook](docs/api/cookbook/) |
+| 📡 | **Multilogin X API** | [**docs/api/**](docs/api/) — 90 endpoints · [cheatsheet](docs/api/CHEATSHEET.md) · [cookbook ×40](docs/api/cookbook/) |
 | 📚 | **Full docs hub** | [docs/README.md](docs/README.md) |
 | 🚀 | **Getting started** | [docs/getting-started.md](docs/getting-started.md) |
 | ❓ | **FAQ · Glossary · Fixes** | [faq](docs/faq.md) · [glossary](docs/glossary.md) · [troubleshooting](docs/troubleshooting.md) |
 | 📊 | **Plan calculator** | `npm run plan` · [tools/plan-calculator.mjs](tools/plan-calculator.mjs) |
-| ⚔️ | **13 tool comparisons** | [docs/comparisons/](docs/comparisons/) |
+| ⚔️ | **16 comparisons + matrix** | [docs/comparisons/](docs/comparisons/) · [matrix](docs/comparisons/comparison-matrix.md) |
+| 🎓 | **Learning paths** | [docs/learn/](docs/learn/) |
 | 📱 | **13 platform playbooks** | [docs/platforms/](docs/platforms/) |
-| 🌏 | **18 country playbooks** | [docs/playbooks/](docs/playbooks/) |
+| 🌏 | **30 country playbooks** | [docs/playbooks/](docs/playbooks/) |
 | 💼 | **11 use-case guides** | [docs/use-cases/](docs/use-cases/) |
 | 🤖 | **Scripts** | [Node](scripts/) · [Python](scripts/python/) |
+| 📖 | **55+ tutorials** | [docs/guides/](docs/guides/) |
+| 🔌 | **Integrations** | [docs/integrations/](docs/integrations/) |
 | 🌍 | **16 languages** | [locales/](locales/) |
 
 > **`multilogin-labs/multilogin-labs`** = GitHub profile repo → [github.com/multilogin-labs](https://github.com/multilogin-labs)

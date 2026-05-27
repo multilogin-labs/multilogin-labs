@@ -19,16 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build static site index
+      - name: Build site
         run: |
           mkdir -p _site
-          cat > _site/index.html << 'HTML'
-          <!DOCTYPE html>
-          <html><head><meta charset="utf-8"><title>Multilogin Labs</title>
-          <meta http-equiv="refresh" content="0;url=https://github.com/multilogin-labs/multilogin-labs">
-          </head><body><p><a href="https://github.com/multilogin-labs/multilogin-labs">Multilogin Labs on GitHub</a></p></body></html>
-          HTML
+          cp docs/index.html _site/index.html
           cp -r docs _site/docs
+          cp llms.txt _site/llms.txt 2>/dev/null || true
+          node tools/generate_sitemap.mjs || true
+          cp docs/sitemap.xml _site/sitemap.xml 2>/dev/null || true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

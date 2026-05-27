@@ -89,3 +89,38 @@ See [comparisons/](comparisons/README.md) — AdsPower, GoLogin, Octo, MoreLogin
 
 **Full keyword list?**  
 [SEARCH_INDEX.md](SEARCH_INDEX.md)
+
+## API (Multilogin X)
+
+**How many API endpoints?**  
+**90** documented in [api/endpoints-index.md](api/endpoints-index.md).
+
+**Launcher vs Cloud API?**  
+- Cloud: `https://api.multilogin.com` — profiles, workspace, proxy  
+- Launcher: `https://launcher.mlx.yt:45001` — start/stop profiles (app must run)
+
+**How to start profile via API?**  
+`GET /api/v2/profile/f/{folder_id}/p/{profile_id}/start` — see [quick-start](api/quick-start.md).
+
+**folder_id vs profile_id?**  
+Both UUIDs from Multilogin app. Required for Launcher start. See [guide](guides/multilogin-folder-id-profile-id.md).
+
+**Automation token vs sign-in token?**  
+Automation token = longer life + higher RPM. Recommended for scripts. [authentication](api/authentication.md)
+
+**Playwright with Multilogin?**  
+Start profile with `automation_type=playwright`, connect to returned port. [cookbook](api/cookbook/01-playwright-full-session.md)
+
+**API errors 401?**  
+Token expired — refresh or use automation token. [troubleshooting](troubleshooting.md)
+
+**Postman?**  
+[postman-setup.md](api/postman-setup.md) + [official collection](https://documenter.getpostman.com/view/28533318/2s946h9Cv9)
+
+## Comparisons
+
+**Multilogin vs AdsPower / GoLogin / Octo?**  
+[comparisons/](comparisons/README.md) — 13 detailed guides.
+
+**Best alternative to VMOS emulator?**  
+[multilogin-vs-vmos-cloud](comparisons/multilogin-vs-vmos-cloud.md) — real Android hardware.

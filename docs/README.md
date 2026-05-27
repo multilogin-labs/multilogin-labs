@@ -9,6 +9,11 @@ Everything in this repo — organized for search, SEO, and quick navigation.
 | Doc | For |
 |---|---|
 | [api/README.md](api/README.md) | **Multilogin X API — 90 endpoints** |
+| [guides/](guides/) | **55+ SEO tutorials** (Playwright, Postman, TikTok…) |
+| [integrations/](integrations/) | Playwright, n8n, Zapier, CI/CD |
+| [learn/](learn/) | **5 learning paths** (beginner → agency) |
+| [comparisons/comparison-matrix.md](comparisons/comparison-matrix.md) | **16 tools** one-page matrix |
+| [api/CHEATSHEET.md](api/CHEATSHEET.md) | One-page API reference |
 | [getting-started.md](getting-started.md) | First profile, API token, scripts |
 | [faq.md](faq.md) | 50+ common questions |
 | [glossary.md](glossary.md) | Antidetect & MMO terminology |

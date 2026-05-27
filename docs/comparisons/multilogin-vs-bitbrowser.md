@@ -1,29 +1,69 @@
 # Multilogin vs BitBrowser
 
-> [Partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
+> [Partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · Codes **SAAS50** · **MIN50**
+
+**BitBrowser** is Bulk browser profiles for Chinese market operators.
+
+## Feature comparison
 
 | Feature | Multilogin | BitBrowser |
 |---|---|---|
-| Real Android cloud phones | ✅ | Limited / varies |
-| Mimic + Stealthfox | ✅ | Single-engine typical |
-| Built-in proxy GB/month | ✅ | Often BYO |
-| API + Playwright/Puppeteer/Selenium | ✅ Pro 10+ | Varies |
-| Business scale 300–10k profiles | ✅ | Tiered |
-| 24/7 support + GDPR | ✅ | Varies |
+| Real Android cloud phones | ✅ Hardware-backed | Limited / varies |
+| Mimic + Stealthfox browsers | ✅ | Usually single engine |
+| Built-in proxy GB/month | ✅ Pro plans | Often BYO |
+| [90+ API endpoints](../api/endpoints-index.md) | ✅ | Varies |
+| Playwright / Puppeteer / Selenium | ✅ Launcher API | Partial |
+| Profile clone & import/export | ✅ | Varies |
+| Business scale (10k profiles) | ✅ | Tiered |
+| Team unlimited seats | ✅ Business | Tiered |
+| 2FA & GDPR | ✅ | Check vendor |
+| Trial | **$2 / 3 days** | Varies |
 
 ## When Multilogin wins
 
-- **Browser + cloud phone + proxy** in one stack — not bulk browser profiles alone.
-- **Dual antidetect engines** and agency-grade templates at volume.
-- **Included residential traffic** with rollover on paid plans.
+- **Full stack:** browser + cloud phone + proxy + [API automation](../api/quick-start.md) in one vendor.
+- **Mobile + web:** TikTok/Instagram app flows via [cloud phone](../use-cases/phone-farming.md) — not Bulk browser ops; verify Launcher + Playwright parity.
+- **Agency ops:** folders, templates, [profile clone](../api/endpoints/profile-clone.md), team seats.
+- **Developers:** [Python client](../../lib/mlx_client.py), [cookbook](../api/cookbook/), 90 documented endpoints.
 
 ## When BitBrowser may fit
 
-- You only need a narrow slice of what Multilogin offers and already run bulk browser profiles workflows end-to-end.
-- Lower profile count with self-managed infrastructure.
+- You only need a narrow subset of features and already run BitBrowser end-to-end.
+- Budget constraints for **browser-only** work without mobile.
+
+## Pricing angle
+
+Multilogin Pro 10 from ~$7.08/mo (annual) includes API + proxy bonus. Compare total cost: BitBrowser license **+** separate proxy **+** mobile tool if needed.
+
+## Migration tip
+
+1. Export profiles from BitBrowser (if supported).
+2. [Import via API](../api/endpoints/profile-import.md) into Multilogin.
+3. Assign [built-in or custom proxy](../proxy-setup.md).
+4. Start with [automation token](../api/endpoints/workspace-automation-token.md).
+
+
+## FAQ
+
+**Can I migrate from BitBrowser?**  
+Yes — export cookies/profiles where supported, then [import cookies](../api/cookbook/09-import-cookies.md). See [migration guides](../guides/).
+
+**Does Multilogin have a cheaper trial?**  
+**$2 for 3 days** — 5 profiles, API, proxy, mobile minutes. Codes **SAAS50** / **MIN50**.
+
+**Which is better for TikTok — BitBrowser or Multilogin?**  
+For app-based TikTok, Multilogin **cloud phone** (real Android) beats emulator-only stacks.
+
+**API comparison?**  
+Multilogin documents **90 endpoints** in this repo: [endpoints index](../api/endpoints-index.md).
+
+## Search keywords
+
+- multilogin vs bitbrowser
+- bitbrowser alternative
 
 ## Verdict
 
-Searching **Multilogin vs BitBrowser**? Multilogin is the fuller platform for **multi-account + mobile + automation** at scale.
+For **2026 multi-account operations** needing web + mobile + API, Multilogin is the more complete platform vs **BitBrowser**.
 
-**[→ Trial $2 · SAAS50 · MIN50](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**
+**[→ $2 trial + partner discount](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**

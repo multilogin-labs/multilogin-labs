@@ -27,6 +27,20 @@ Use **Ctrl+F** on this page or GitHub repo search. Every topic links to a guide 
 | multilogin api proxy | [api/categories/proxy.md](api/categories/proxy.md) |
 | multilogin api quick start | [api/quick-start](api/quick-start.md) |
 | multilogin api cookbook | [api/cookbook/](api/cookbook/) |
+| multilogin guides tutorials | [guides/](guides/) |
+| multilogin postman setup | [api/postman-setup.md](api/postman-setup.md) |
+| multilogin vs adspower gologin | [comparisons/](comparisons/) |
+| multilogin germany france playbook | [playbooks/germany.md](playbooks/germany.md) |
+| multilogin n8n zapier integration | [integrations/](integrations/) |
+| multilogin google ads shopee guide | [guides/](guides/) |
+| multilogin migrate adspower gologin | [guides/multilogin-migrate-from-adspower.md](guides/multilogin-migrate-from-adspower.md) |
+| multilogin sitemap docs | [sitemap.xml](sitemap.xml) |
+| multilogin api cheatsheet | [api/CHEATSHEET.md](api/CHEATSHEET.md) |
+| multilogin comparison matrix all tools | [comparisons/comparison-matrix.md](comparisons/comparison-matrix.md) |
+| multilogin vs hidemyacc lalicat | [comparisons/](comparisons/) |
+| multilogin learn beginner path | [learn/beginner-antidetect.md](learn/beginner-antidetect.md) |
+| multilogin instagram shopee binance | [platforms/](platforms/) |
+| llms.txt ai discovery | [../llms.txt](../llms.txt) |
 
 ## Antidetect & browser
 

@@ -13,10 +13,13 @@ Curated links for multi-account operators, developers, and MMO teams.
 
 ## This repo
 
+- [SEARCH_INDEX](SEARCH_INDEX.md) — 100+ keywords
+- [API cheatsheet](api/CHEATSHEET.md) · [90 endpoints](api/endpoints-index.md) · [Cookbook ×40](api/cookbook/)
+- [Comparison matrix](comparisons/comparison-matrix.md) — 16 tools
+- [Learning paths](learn/) · [55+ guides](guides/)
 - [Getting started](getting-started.md)
-- [Comparisons](comparisons/)
-- [Platform playbooks](platforms/)
-- [Country playbooks](playbooks/) — VN, BR, ID, PH, TR, IN
+- [Comparisons](comparisons/) · [Platforms](platforms/) · [Integrations](integrations/)
+- [Country playbooks](playbooks/) — 30 markets
 - [Plan calculator](../tools/plan-calculator.mjs)
 - [Automation scripts](../scripts/) · [Python](../scripts/python/)
 

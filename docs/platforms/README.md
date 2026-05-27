@@ -19,3 +19,7 @@
 | Pinterest | [pinterest.md](pinterest.md) |
 
 [SEARCH_INDEX](../SEARCH_INDEX.md) · [Use cases](../use-cases/)
+
+| Instagram | [instagram.md](instagram.md) |
+| Shopee | [shopee.md](shopee.md) |
+| Binance & CEX | [binance.md](binance.md) |

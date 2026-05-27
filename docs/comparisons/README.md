@@ -17,5 +17,8 @@
 | BitBrowser | [multilogin-vs-bitbrowser.md](multilogin-vs-bitbrowser.md) |
 | Nstbrowser | [multilogin-vs-nstbrowser.md](multilogin-vs-nstbrowser.md) |
 | Undetectable | [multilogin-vs-undetectable.md](multilogin-vs-undetectable.md) |
+| HideMyAcc | [multilogin-vs-hidemyacc.md](multilogin-vs-hidemyacc.md) |
+| Lalicat | [multilogin-vs-lalicat.md](multilogin-vs-lalicat.md) |
+| ixBrowser | [multilogin-vs-ixbrowser.md](multilogin-vs-ixbrowser.md) |
 
-**13 comparisons** · [SEARCH_INDEX](../SEARCH_INDEX.md)
+**16 comparisons** · [Matrix](comparison-matrix.md) · [SEARCH_INDEX](../SEARCH_INDEX.md)

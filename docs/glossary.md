@@ -24,5 +24,12 @@
 | **Multi-accounting** | Running multiple platform accounts with isolated identities. |
 | **ORM** | Online reputation management — multiple accounts for reviews/mentions. |
 | **Traffic arbitrage** | Buying cheap traffic, monetizing across multiple ad/publisher accounts. |
+| **folder_id** | Workspace folder UUID — required in Launcher start URL path. |
+| **profile_id** | Unique UUID for one browser or cloud phone profile. |
+| **Quick profile** | Temporary profile created via API v3 — auto-deleted after stop. |
+| **headless_mode** | Launcher flag to run browser without visible window for automation. |
+| **Cloud API** | `api.multilogin.com` — workspace, profiles, proxy, auth. |
+| **Postman collection** | Official Multilogin X API reference for testing endpoints. |
+| **Cookie import** | Restore session state when migrating from another antidetect tool. |
 
 See also: [SEARCH_INDEX.md](SEARCH_INDEX.md) · [faq.md](faq.md)

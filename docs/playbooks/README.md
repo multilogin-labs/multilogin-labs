@@ -1,4 +1,4 @@
-# Country playbooks — 18 markets
+# Country playbooks — 30 markets
 
 > [Partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
@@ -22,5 +22,17 @@
 | 🇰🇷 Korea | [korea.md](korea.md) |
 | 🇹🇭 Thailand | [thailand.md](thailand.md) |
 | 🇨🇳 China diaspora | [china-diaspora.md](china-diaspora.md) |
+| 🇩🇪 Germany | [germany.md](germany.md) |
+| 🇫🇷 France | [france.md](france.md) |
+| 🇪🇸 Spain | [spain.md](spain.md) |
+| 🇮🇹 Italy | [italy.md](italy.md) |
+| 🇨🇦 Canada | [canada.md](canada.md) |
+| 🇦🇺 Australia | [australia.md](australia.md) |
+| 🇲🇾 Malaysia | [malaysia.md](malaysia.md) |
+| 🇸🇬 Singapore | [singapore.md](singapore.md) |
+| 🇹🇼 Taiwan | [taiwan.md](taiwan.md) |
+| 🇸🇦 Saudi Arabia | [saudi-arabia.md](saudi-arabia.md) |
+| 🇦🇷 Argentina | [argentina.md](argentina.md) |
+| 🇨🇴 Colombia | [colombia.md](colombia.md) |
 
-[SEARCH_INDEX](../SEARCH_INDEX.md) · [Locales](../../locales/)
+[SEARCH_INDEX](../SEARCH_INDEX.md) · [Guides](../guides/README.md) · [Locales](../../locales/)

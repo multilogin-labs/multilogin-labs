@@ -11,7 +11,10 @@
     "selenium:connect": "node scripts/selenium/connect-profile.mjs",
     "api:stop": "node scripts/api/stop-profile.mjs",
     "proxy:check": "node tools/proxy-check.mjs",
-    "plan": "node tools/plan-calculator.mjs"
+    "plan": "node tools/plan-calculator.mjs",
+    "api:search": "node tools/api-search.mjs",
+    "sitemap": "node tools/generate_sitemap.mjs",
+    "upgrade": "bash tools/upgrade_all.sh"
   },
   "engines": {
     "node": ">=18"

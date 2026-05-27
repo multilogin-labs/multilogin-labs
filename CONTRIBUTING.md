@@ -17,6 +17,13 @@ Thanks for helping grow Multilogin Labs.
    `https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549`
 4. Match existing code style (ES modules, Node 18+).
 
+## Regenerate docs (maintainers)
+
+```bash
+npm run upgrade      # enrich comparisons/platforms, learn paths, sitemap
+npm run api:search -- profile start
+```
+
 ## Run locally
 
 ```bash
