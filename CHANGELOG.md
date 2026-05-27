@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.1.0] — 2026-05-24
+
+### Added
+- Enriched all 90 API endpoint pages with full request/response examples
+- API quick-start, cookbook (8 recipes), Node mlx_client.mjs
+- tools/enrich_endpoints.py, GitHub Pages workflow
+- Expanded VMOS comparison with API cross-links
+
 ## [3.0.0] — 2026-05-24
 
 ### Added — Multilogin X API knowledge base (from official Postman export)

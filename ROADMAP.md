@@ -1,5 +1,13 @@
 # Roadmap
 
+## Shipped (v3 enrichment)
+
+- [x] **All 90 endpoint pages** enriched with curl + JSON from official API reference
+- [x] API [quick-start](docs/api/quick-start.md) + [cookbook](docs/api/cookbook/) (8 recipes)
+- [x] Node [mlx_client.mjs](lib/mlx_client.mjs)
+- [x] [tools/enrich_endpoints.py](tools/enrich_endpoints.py) for regeneration
+- [x] GitHub Pages workflow (docs mirror)
+
 ## Shipped (v2 content explosion)
 
 - [x] **SEARCH_INDEX** — 100+ keywords mapped to guides

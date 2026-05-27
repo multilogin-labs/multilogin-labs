@@ -25,7 +25,8 @@ Use **Ctrl+F** on this page or GitHub repo search. Every topic links to a guide 
 | multilogin refresh token | [api/endpoints/user-refresh-token-switch-workspace.md](api/endpoints/user-refresh-token-switch-workspace.md) |
 | multilogin api 2fa | [api/categories/2fa.md](api/categories/2fa.md) |
 | multilogin api proxy | [api/categories/proxy.md](api/categories/proxy.md) |
-| multilogin api keywords (all) | [api/SEARCH_KEYWORDS.md](api/SEARCH_KEYWORDS.md) |
+| multilogin api quick start | [api/quick-start](api/quick-start.md) |
+| multilogin api cookbook | [api/cookbook/](api/cookbook/) |
 
 ## Antidetect & browser
 

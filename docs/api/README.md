@@ -4,6 +4,8 @@ Community-structured reference for **Multilogin X API** — 90 endpoints, Python
 
 | | |
 |---|---|
+| [quick-start.md](quick-start.md) | **5-minute** API setup |
+| [cookbook/](cookbook/) | **8 automation recipes** |
 | [Overview](overview.md) | Base URLs & categories |
 | [Authentication](authentication.md) | Tokens & .env |
 | [Endpoints index](endpoints-index.md) | Search all endpoints |
