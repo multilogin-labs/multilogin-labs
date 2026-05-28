@@ -89,14 +89,28 @@
 - [x] **Helm chart + Terraform** templates in [deploy/](deploy/)
 - [x] **Showcase**, **Newsletter**, **Discussions seed**, weekly **star-history snapshot** workflow
 
-## Next (v9 ideas)
+## Shipped (v9 — agents, edges, integrations)
 
-- [ ] First real social preview PNG (`docs/social-preview.png`)
+- [x] **Cookbook 61–80** — 80 recipes total (k6, OpenTelemetry, Vercel cron, n8n, Make, Zapier, Supabase, Airtable, Notion, Sentry, Datadog, Go/Rust snippets, GH Actions cron…)
+- [x] **Cloudflare Worker** template — search proxy + partner redirect ([integrations/cloudflare-worker/](integrations/cloudflare-worker/))
+- [x] **Telegram bot** ([integrations/telegram-bot/](integrations/telegram-bot/)) + **Discord bot** ([integrations/discord-bot/](integrations/discord-bot/))
+- [x] **Browser MV3 extension** Chrome / Firefox — [extensions/browser-mlx/](extensions/browser-mlx/)
+- [x] **WordPress plugin** with `[mlx_partner]` shortcode
+- [x] **Full Postman v2.1 collection** ([docs/api/postman-collection.json](docs/api/postman-collection.json))
+- [x] **AGENTS.md** + `.cursor/rules/repo.mdc` for autonomous coding agents
+- [x] **Press kit** — [press-kit/](press-kit/) (logo SVG, 1200 × 630 banner, palette, boilerplate)
+- [x] **Social preview SVG** — [docs/social-preview.svg](docs/social-preview.svg)
+- [x] **AdsPower → Multilogin migration tool** ([tools/migrate-adspower.mjs](tools/migrate-adspower.mjs))
+- [x] Total Markdown count → **625**, sitemap → **624**
+
+## Next (v10 ideas)
+
+- [ ] First 5 community CSVs in `docs/benchmarks/`
 - [ ] Real CLI `cli.gif` recorded with VHS
 - [ ] Algolia DocSearch application submitted
-- [ ] First 5 community CSVs in `docs/benchmarks/`
-- [ ] Add Hindi / Russian / Arabic guide tracks for cookbook (currently EN-only)
-- [ ] WordPress / Shopify seller plugins
-- [ ] Cloudflare Worker template that proxies the search index
-- [ ] Telegram / Discord community bots
+- [ ] Cookbook locales (RU / TR / VI translations of top 20 recipes)
+- [ ] Shopify embedded app scaffold
+- [ ] Self-hostable status page for Multilogin services
+- [ ] Migration tool for GoLogin / Octo Browser
+- [ ] AI agent demo notebook (LangGraph / CrewAI driving Multilogin)
 

@@ -78,6 +78,26 @@
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/58-two-fa-rotate-backup.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/59-agency-onboarding-script.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/60-self-hosted-runner-pattern.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/61-github-actions-cron.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/62-playwright-codegen-handoff.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/63-go-client-snippet.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/64-rust-client-snippet.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/65-k6-load-test.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/66-vitest-mock-mlx.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/67-pytest-fixtures.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/68-datadog-metrics.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/69-sentry-error-capture.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/70-ofelia-docker-cron.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/71-vercel-cron-warmup.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/72-cloudflare-worker-search.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/73-n8n-workflow.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/74-make-com-scenario.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/75-zapier-zap.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/76-supabase-sync.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/77-airtable-sync.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/78-notion-sync.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/79-telemetry-opentelemetry.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/80-rotating-residential-proxy.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/endpoints/browser-core-list.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/endpoints/cloud-to-local.html</loc></url>
@@ -538,6 +558,7 @@
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/learn/developer-api-path.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/learn/migration-path.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/learn/mmo-country-path.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/migrations/from-adspower.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/newsletter.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/og-image-spec.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/platforms/.html</loc></url>
