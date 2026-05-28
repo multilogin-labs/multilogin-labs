@@ -1,0 +1,15 @@
+{
+  "name": "mlx-discord-bot",
+  "version": "0.1.0",
+  "description": "Discord bot that searches 90 Multilogin endpoints.",
+  "type": "module",
+  "main": "bot.mjs",
+  "scripts": {
+    "start": "node bot.mjs"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "discord.js": "^14.16.0"
+  },
+  "license": "MIT"
+}

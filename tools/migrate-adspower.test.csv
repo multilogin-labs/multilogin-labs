@@ -1,0 +1,4 @@
+id,name,os,browser,proxy_type,proxy_host,proxy_port,proxy_user,proxy_pass,group,notes
+1,acme-fb-1,Win11,Mimic,http,1.2.3.4,8080,alice,pw1,facebook,blue team
+2,acme-fb-2,Win11,Mimic,socks5,5.6.7.8,1080,bob,pw2,facebook,red team
+3,shop-tk-1,macOS,Stealthfox,http,9.10.11.12,3128,,,tiktok,

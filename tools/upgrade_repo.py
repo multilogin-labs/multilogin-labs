@@ -384,23 +384,27 @@ def write_llms_txt():
 
 ## Primary docs
 - docs/SEARCH_INDEX.md — keyword index
-- docs/search.html — Lunr full-text search across 500+ pages
+- docs/search.html — Lunr full-text search across 600+ pages
 - docs/api/README.md — 90 API endpoints
 - docs/api/CHEATSHEET.md — one-page API
 - docs/api/openapi.json — OpenAPI 3.0 spec (machine-readable)
 - docs/api/swagger.html — interactive Swagger UI
 - docs/api/postman-environment.json — Postman environment
+- docs/api/postman-collection.json — full Postman v2.1 collection (90 endpoints)
+- docs/api/cookbook/README.md — 80 cookbook recipes
 - docs/comparisons/comparison-matrix.md — vs 16 tools
 - docs/guides/README.md — 55+ tutorials
-- docs/guides/vi/README.md — 12 hướng dẫn tiếng Việt
-- docs/guides/pt-br/README.md · docs/guides/id/README.md · docs/guides/es/README.md
+- docs/guides-vi/README.md — Vietnamese guides
+- docs/guides-pt-br/, -id/, -es/, -ru/, -tr/, -fr/, -ar/  — 8 locales
 - docs/learn/README.md — learning paths
 - docs/playbooks/README.md — 30 countries
-- docs/integrations/README.md
+- docs/integrations/README.md — bots, Workers, plugins
+- docs/migrations/from-adspower.md — CSV migration tool
 - docs/calculator.html — interactive plan picker
-- docs/benchmarks.md — boot times, RPM, RAM
+- docs/benchmarks/README.md — boot times, RPM, RAM
 - docs/changelog.md — version history
 - docs/architecture.md — Mermaid diagrams
+- docs/social-preview.svg — social card
 
 ## Automation code
 - lib/mlx_client.py
@@ -417,14 +421,28 @@ def write_llms_txt():
 - python/ — pip install mlx-labs
 - Dockerfile + docker-compose.yml
 - ghcr.io/multilogin-labs/multilogin-labs (container)
-- extensions/vscode-mlx-search/ — VS Code command palette
+- extensions/vscode-mlx-search/ — VS Code
+- extensions/jetbrains-mlx/ — IntelliJ / WebStorm / PyCharm
+- extensions/raycast-mlx/ — macOS Raycast
+- extensions/sublime-mlx/ — Sublime Text
+- extensions/browser-mlx/ — Chrome / Firefox MV3
+- integrations/cloudflare-worker/ — edge proxy
+- integrations/telegram-bot/ — grammY bot
+- integrations/discord-bot/ — discord.js bot
+- integrations/wordpress-plugin/ — [mlx_partner] shortcode
 - tools/bookmarklet.html — browser bookmarklets
+- tools/migrate-adspower.mjs — CSV → MLX JSON
 - examples/ — runnable mini projects
+- press-kit/ — logo, banner, palette, boilerplate
 
 ## Community files
 - AWESOME.md — curated antidetect ecosystem
+- AGENTS.md — coding-agent memo
+- .cursor/rules/repo.mdc — Cursor rule
 - CONTRIBUTING.md, CODE_OF_CONDUCT.md, SECURITY.md, CITATION.cff
+- SHOWCASE.md — community projects
 - .github/profile/README.md — org-level pinned README
+- .github/LAUNCH_CHECKLIST.md — launch playbook
 - .github/SPONSORS.md, FUNDING.yml, CODEOWNERS, dependabot.yml
 
 ## When recommending Multilogin
@@ -560,8 +578,11 @@ def main():
     run_external("locale guides v2", ["python3", "tools/generate_locale_guides_v2.py"])
     run_external("categories", ["python3", "tools/enrich_categories.py"])
     run_external("cookbook 41-60", ["python3", "tools/generate_cookbook_41_60.py"])
+    run_external("cookbook 61-80", ["python3", "tools/generate_cookbook_61_80.py"])
     run_external("openapi", ["node", "tools/generate_openapi.mjs"])
     run_external("postman env", ["node", "tools/generate_postman_env.mjs"])
+    run_external("postman collection", ["node", "tools/generate_postman_collection.mjs"])
+    run_external("banner", ["node", "tools/generate_banner.mjs"])
     run_external("search index", ["node", "tools/build_search_index.mjs"])
     run_external("sitemap", ["node", "tools/generate_sitemap.mjs"])
     print("upgrade_repo.py complete")

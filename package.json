@@ -15,6 +15,7 @@
     "api:search": "node tools/api-search.mjs",
     "openapi": "node tools/generate_openapi.mjs",
     "postman:env": "node tools/generate_postman_env.mjs",
+    "postman:collection": "node tools/generate_postman_collection.mjs",
     "search:index": "node tools/build_search_index.mjs",
     "sitemap": "node tools/generate_sitemap.mjs",
     "warmup": "node tools/warmup-scheduler.mjs",

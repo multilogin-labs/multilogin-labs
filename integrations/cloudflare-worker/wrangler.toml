@@ -1,0 +1,14 @@
+name = "multilogin-labs-search"
+main = "src/index.js"
+compatibility_date = "2026-05-01"
+
+[vars]
+PARTNER_URL = "https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"
+ENDPOINTS_URL = "https://raw.githubusercontent.com/multilogin-labs/multilogin-labs/main/docs/api/endpoints.json"
+
+# kv_namespaces = [
+#   { binding = "MLX_CACHE", id = "<your-kv-id>" }
+# ]
+
+# [observability]
+# enabled = true

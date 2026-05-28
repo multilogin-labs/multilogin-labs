@@ -1,0 +1,15 @@
+{
+  "name": "mlx-telegram-bot",
+  "version": "0.1.0",
+  "description": "Telegram bot that searches 90 Multilogin endpoints and exposes the partner trial link.",
+  "type": "module",
+  "main": "bot.mjs",
+  "scripts": {
+    "start": "node bot.mjs"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "grammy": "^1.30.0"
+  },
+  "license": "MIT"
+}

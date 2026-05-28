@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Multilogin Labs · Open in Multilogin",
+  "short_name": "MLX Labs",
+  "description": "Quick endpoint search, partner pricing, and one-click Swagger UI for the Multilogin X API.",
+  "version": "0.1.0",
+  "author": "Multilogin Labs",
+  "homepage_url": "https://github.com/multilogin-labs/multilogin-labs",
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "action": {
+    "default_title": "Multilogin Labs",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://multilogin.com/*",
+    "https://multilogin-labs.github.io/*"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "mlx-labs@multilogin-labs.github.io",
+      "strict_min_version": "115.0"
+    }
+  }
+}

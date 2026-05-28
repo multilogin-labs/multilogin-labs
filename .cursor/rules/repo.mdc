@@ -1,0 +1,48 @@
+---
+description: Multilogin Labs repository conventions, generators, and affiliate rules. Auto-attach when editing anything in this repo.
+globs: ["**"]
+alwaysApply: false
+---
+
+# Multilogin Labs · cursor rule
+
+Read [`AGENTS.md`](mdc:AGENTS.md) before any large change.
+
+## Hard rules
+
+1. **Affiliate URL is sacred.** Every pricing/trial CTA must use:
+   ```
+   https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
+   ```
+   Never strip `a_aid`, `a_bid`, or the UTM trio.
+2. **Don't hand-edit generated files.** Regenerate via `bash tools/upgrade_all.sh`.
+3. **`docs/api/endpoints.json` is the source of truth** for OpenAPI, Postman, Swagger, search index, browser extension, CLI, and bots.
+4. **Counts to keep in sync** when adding content:
+   - `README.md` (badges + headline numbers)
+   - `docs/index.html`
+   - `docs/changelog.md` (append a new version)
+   - `docs/SEARCH_INDEX.md`
+   - `llms.txt`
+5. **No analytics / trackers** in any HTML deliverable.
+6. **Locales already supported**: EN, VI, PT-BR, ID, ES, RU, TR, FR, AR. Add new ones via a generator under `tools/`.
+
+## Common tasks
+
+- Add an endpoint → edit `docs/api/endpoints.json` then `bash tools/upgrade_all.sh`.
+- Add a comparison → drop file under `docs/comparisons/`, then run `python3 tools/longform_comparisons.py`.
+- Add a cookbook recipe → new numbered generator under `tools/`, mirror `generate_cookbook_61_80.py`.
+- Add a guide → drop into `docs/guides/<slug>.md`, run `node tools/build_search_index.mjs && node tools/generate_sitemap.mjs`.
+
+## Style
+
+- Markdown: ATX headers, fenced code, no trailing whitespace.
+- Node: ESM only, no top-level await without try/catch.
+- Python: type hints on new code, prefer stdlib.
+- File names: kebab-case for docs, snake_case for Python, kebab.mjs for Node tools.
+
+## Don't
+
+- Don't introduce TypeScript build steps.
+- Don't add a JS bundler (Pages must serve raw HTML/JS).
+- Don't add untyped Python deps.
+- Don't reformat unrelated files in a PR.

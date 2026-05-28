@@ -1,7 +1,7 @@
 # Multilogin X API Cookbook
 
 
-**60 recipes**
+**80 recipes**
 
 | # | Recipe |
 |---|---|
@@ -67,3 +67,23 @@
 | 58 | [Rotate 2FA backup codes](58-two-fa-rotate-backup.md) |
 | 59 | [Agency onboarding script](59-agency-onboarding-script.md) |
 | 60 | [Self-hosted CI runner pattern](60-self-hosted-runner-pattern.md) |
+| 61 | [Run warmup from GitHub Actions cron](61-github-actions-cron.md) |
+| 62 | [Hand off Playwright codegen to a profile](62-playwright-codegen-handoff.md) |
+| 63 | [Minimal Go client snippet](63-go-client-snippet.md) |
+| 64 | [Minimal Rust client snippet](64-rust-client-snippet.md) |
+| 65 | [k6 load test against Launcher](65-k6-load-test.md) |
+| 66 | [Mock MLX client for Vitest](66-vitest-mock-mlx.md) |
+| 67 | [Pytest fixtures for Multilogin tests](67-pytest-fixtures.md) |
+| 68 | [Send timings to Datadog](68-datadog-metrics.md) |
+| 69 | [Capture errors to Sentry](69-sentry-error-capture.md) |
+| 70 | [Use Ofelia for Docker-native cron](70-ofelia-docker-cron.md) |
+| 71 | [Vercel cron triggers warmup](71-vercel-cron-warmup.md) |
+| 72 | [Cloudflare Worker proxies search](72-cloudflare-worker-search.md) |
+| 73 | [n8n workflow that watches profile errors](73-n8n-workflow.md) |
+| 74 | [Make.com scenario blueprint](74-make-com-scenario.md) |
+| 75 | [Zapier zap for new-profile alerts](75-zapier-zap.md) |
+| 76 | [Sync profile metadata to Supabase](76-supabase-sync.md) |
+| 77 | [Sync profile metadata to Airtable](77-airtable-sync.md) |
+| 78 | [Mirror profiles into a Notion database](78-notion-sync.md) |
+| 79 | [OpenTelemetry traces for profile ops](79-telemetry-opentelemetry.md) |
+| 80 | [Plug rotating residential proxy provider](80-rotating-residential-proxy.md) |

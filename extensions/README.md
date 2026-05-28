@@ -8,6 +8,7 @@ Small editor integrations that hook into the docs and OpenAPI spec.
 | [jetbrains-mlx](jetbrains-mlx/) | IntelliJ / WebStorm / PyCharm plugin scaffold (Kotlin) |
 | [raycast-mlx](raycast-mlx/) | macOS Raycast extension (TypeScript) |
 | [sublime-mlx](sublime-mlx/) | Sublime Text command palette (Python) |
+| [browser-mlx](browser-mlx/) | Chrome / Firefox MV3 popup |
 | [bookmarklet](../tools/bookmarklet.html) | Browser bookmarklets |
 
 PRs welcome for: Alfred workflow, Albert, Wox, Rofi.

@@ -1,0 +1,2765 @@
+{
+  "info": {
+    "_postman_id": "mlx-labs-collection",
+    "name": "Multilogin Labs · Multilogin X (community)",
+    "description": "Community Postman collection auto-generated from docs/api/endpoints.json.\nPartner pricing: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549\nRepo: https://github.com/multilogin-labs/multilogin-labs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "MULTILOGIN_API",
+      "value": "https://api.multilogin.com"
+    },
+    {
+      "key": "MULTILOGIN_LAUNCHER",
+      "value": "https://launcher.mlx.yt:45001"
+    },
+    {
+      "key": "MULTILOGIN_TOKEN",
+      "value": ""
+    },
+    {
+      "key": "MULTILOGIN_FOLDER_ID",
+      "value": ""
+    },
+    {
+      "key": "MULTILOGIN_PROFILE_ID",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Launcher",
+      "item": [
+        {
+          "name": "Start Browser Profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v2/profile/f/{{folder_id}}/p/{{profile_id}}/start",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "profile",
+                "f",
+                "%7B%7Bfolder_id%7D%7D",
+                "p",
+                "%7B%7Bprofile_id%7D%7D",
+                "start"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/start-browser-profile.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/start-browser-profile.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Start Quick Profile v3",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v3/profile/quick",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "profile",
+                "quick"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/start-quick-profile-v3.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/start-quick-profile-v3.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Start Quick Profile (Deprecated)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v2/profile/quick",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "profile",
+                "quick"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/start-quick-profile-deprecated.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/start-quick-profile-deprecated.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Stop Browser Profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/profile/stop",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "profile",
+                "stop"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/stop-browser-profile.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/stop-browser-profile.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Stop All Profiles",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/profile/stop_all",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "profile",
+                "stop_all"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/stop-all-profiles.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/stop-all-profiles.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Version",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/version",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "version"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-version.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-version.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Profile Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/profile/active",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "profile",
+                "active"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-profile-status.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-profile-status.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Profiles Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v2/profile/active",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "profile",
+                "active"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-all-profiles-status.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-all-profiles-status.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Quick Profiles Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/quick-profiles/active",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "quick-profiles",
+                "active"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-all-quick-profiles-status.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-all-quick-profiles-status.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Loaded Browser Cores",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/core/loaded",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "core",
+                "loaded"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/loaded-browser-cores.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/loaded-browser-cores.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Browser Core List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/core/list",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "core",
+                "list"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/browser-core-list.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/browser-core-list.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Load Browser Core",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/core/load",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "core",
+                "load"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/load-browser-core.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/load-browser-core.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Browser Core",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/core",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "core"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/delete-browser-core.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/delete-browser-core.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Validate Proxy",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/proxy/validate",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "proxy",
+                "validate"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/validate-proxy.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/validate-proxy.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Cookie Import",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/cookies/import",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "cookies",
+                "import"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/cookie-import.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/cookie-import.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Cookie Export",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/cookies/export",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "cookies",
+                "export"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/cookie-export.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/cookie-export.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Convert QBP to Profile",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/profile/convert_qbp",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "profile",
+                "convert_qbp"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/convert-qbp-to-profile.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/convert-qbp-to-profile.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get QBP Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v1/profile/qbp_status",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "profile",
+                "qbp_status"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-qbp-status.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-qbp-status.md"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Profile Access Management",
+      "item": [
+        {
+          "name": "User Sign In",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/user/signin",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "user",
+                "signin"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/user-sign-in.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-sign-in.md"
+          },
+          "response": []
+        },
+        {
+          "name": "User Refresh Token (Switch Workspace)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/user/refresh_token",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "user",
+                "refresh_token"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/user-refresh-token-switch-workspace.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-refresh-token-switch-workspace.md"
+          },
+          "response": []
+        },
+        {
+          "name": "User Revoke Token",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/user/revoke_token",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "user",
+                "revoke_token"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/user-revoke-token.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-revoke-token.md"
+          },
+          "response": []
+        },
+        {
+          "name": "User Change Password",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/user/change_password",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "user",
+                "change_password"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/user-change-password.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-change-password.md"
+          },
+          "response": []
+        },
+        {
+          "name": "User Workspaces",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/user/workspaces",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "user",
+                "workspaces"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/user-workspaces.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-workspaces.md"
+          },
+          "response": []
+        },
+        {
+          "name": "User Token List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/user/tokens",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "user",
+                "tokens"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/user-token-list.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-token-list.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Workspace Restrictions",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/workspace/restrictions",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "workspace",
+                "restrictions"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/workspace-restrictions.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-restrictions.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Workspace Folders",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/workspace/folders",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "workspace",
+                "folders"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/workspace-folders.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-folders.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Workspace Folders For User",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/workspace/folders/user",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "workspace",
+                "folders",
+                "user"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/workspace-folders-for-user.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-folders-for-user.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Workspace Statistics",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/workspace/statistics",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "workspace",
+                "statistics"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/workspace-statistics.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-statistics.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Workspace Automation Token",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/workspace/automation_token",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "workspace",
+                "automation_token"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/workspace-automation-token.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-automation-token.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Workspace Create Folder",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/workspace/folder/create",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "workspace",
+                "folder",
+                "create"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/workspace-create-folder.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-create-folder.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Workspace Update Folder",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/workspace/folder/update",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "workspace",
+                "folder",
+                "update"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/workspace-update-folder.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-update-folder.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Workspace Remove Folders",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/workspace/folders/remove",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "workspace",
+                "folders",
+                "remove"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/workspace-remove-folders.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-remove-folders.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Workspace Leave",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/workspace/leave",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "workspace",
+                "leave"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/workspace-leave.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-leave.md"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Profile Management",
+      "item": [
+        {
+          "name": "Profile Create",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/create",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "create"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-create.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-create.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Search",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/search",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "search"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-search.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-search.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Remove",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/remove",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "remove"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-remove.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-remove.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Update",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/update",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "update"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-update.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-update.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Move",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/move",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "move"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-move.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-move.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Partial Update",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/partial_update",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "partial_update"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-partial-update.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-partial-update.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Restore",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/restore",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "restore"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-restore.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-restore.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Metas",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/metas",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "metas"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-metas.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-metas.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Summary",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/summary",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "summary"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-summary.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-summary.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Clone",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/clone",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "clone"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-clone.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-clone.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Convert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/convert",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "convert"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-convert.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-convert.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Screen Resolution",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/screen_resolutions",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "screen_resolutions"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/screen-resolution.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/screen-resolution.md"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Browser Profile Data",
+      "item": [
+        {
+          "name": "Unlock Locked Profiles",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/unlock",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "unlock"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/unlock-locked-profiles.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/unlock-locked-profiles.md"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Proxy",
+      "item": [
+        {
+          "name": "Generate Proxy",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/proxy/generate",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "proxy",
+                "generate"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/generate-proxy.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/generate-proxy.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch Proxy Data",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/proxy/data",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "proxy",
+                "data"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/fetch-proxy-data.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/fetch-proxy-data.md"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Pre-made Cookies",
+      "item": [
+        {
+          "name": "Target Website List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/cookies/websites",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "cookies",
+                "websites"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/target-website-list.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/target-website-list.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Create Cookies Metadata",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/cookies/metadata/create",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "cookies",
+                "metadata",
+                "create"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/create-cookies-metadata.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/create-cookies-metadata.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Cookies List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/cookies/list",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "cookies",
+                "list"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/cookies-list.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/cookies-list.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Cookies Metadata",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/cookies/metadata/update",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "cookies",
+                "metadata",
+                "update"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/update-cookies-metadata.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/update-cookies-metadata.md"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Script Runner",
+      "item": [
+        {
+          "name": "Start Browser Profile with Selenium",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_LAUNCHER}}/api/v2/profile/f/{{folder_id}}/p/{{profile_id}}/start?automation_type=selenium&script_file=script.py",
+              "host": [
+                "{{MULTILOGIN_LAUNCHER}}"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "profile",
+                "f",
+                "%7B%7Bfolder_id%7D%7D",
+                "p",
+                "%7B%7Bprofile_id%7D%7D",
+                "start"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/start-browser-profile-with-selenium.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/start-browser-profile-with-selenium.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Start Script Runner",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/script/start",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "script",
+                "start"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/start-script-runner.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/start-script-runner.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Stop Script Runner",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/script/stop",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "script",
+                "stop"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/stop-script-runner.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/stop-script-runner.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Script List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/script/list",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "script",
+                "list"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/script-list.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/script-list.md"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Profile Import/Export",
+      "item": [
+        {
+          "name": "Profile Export",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/export",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "export"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-export.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-export.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Export Status by Profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/export/status",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "export",
+                "status"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/export-status-by-profile.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/export-status-by-profile.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Export Status All",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/export/status/all",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "export",
+                "status",
+                "all"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/export-status-all.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/export-status-all.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Import",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/import",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "import"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/profile-import.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-import.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Import Status by Profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/import/status",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "import",
+                "status"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/import-status-by-profile.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/import-status-by-profile.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Import Status All",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/profile/import/status/all",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "profile",
+                "import",
+                "status",
+                "all"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/import-status-all.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/import-status-all.md"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Object Storage",
+      "item": [
+        {
+          "name": "Upload Object",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/upload",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "upload"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/upload-object.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/upload-object.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Create and Upload",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/create_upload",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "create_upload"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/create-and-upload.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/create-and-upload.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Object Profile Usages",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/object/usages",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "object",
+                "usages"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/object-profile-usages.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/object-profile-usages.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get List of Object Types",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/types",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "types"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-list-of-object-types.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-list-of-object-types.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Statistics for Objects",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/statistics",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "statistics"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-statistics-for-objects.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-statistics-for-objects.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Objects Meta",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/objects/meta",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "objects",
+                "meta"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-objects-meta.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-objects-meta.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Object Meta by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/object/meta",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "object",
+                "meta"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-object-meta-by-id.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-object-meta-by-id.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Object",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/object/delete",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "object",
+                "delete"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/delete-object.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/delete-object.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Restore Object",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/object/restore",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "object",
+                "restore"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/restore-object.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/restore-object.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Cloud to Local",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/cloud_to_local",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "cloud_to_local"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/cloud-to-local.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/cloud-to-local.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Local to Cloud",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/local_to_cloud",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "local_to_cloud"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/local-to-cloud.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/local-to-cloud.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Download Object",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/object/download",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "object",
+                "download"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/download-object.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/download-object.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Create Extension",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/extension/create",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "extension",
+                "create"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/create-extension.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/create-extension.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Enable Extension",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/extension/enable",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "extension",
+                "enable"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/enable-extension.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/enable-extension.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Disable Extension",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/extension/disable",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "extension",
+                "disable"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/disable-extension.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/disable-extension.md"
+          },
+          "response": []
+        },
+        {
+          "name": "List of Objects per Profile",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/storage/profile/objects",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "storage",
+                "profile",
+                "objects"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/list-of-objects-per-profile.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/list-of-objects-per-profile.md"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Bookmark Management",
+      "item": [
+        {
+          "name": "Export Bookmarks",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/bookmarks/export",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "bookmarks",
+                "export"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/export-bookmarks.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/export-bookmarks.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Import Bookmarks",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/bookmarks/import",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "bookmarks",
+                "import"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/import-bookmarks.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/import-bookmarks.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Copy Bookmarks",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/bookmarks/copy",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "bookmarks",
+                "copy"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/copy-bookmarks.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/copy-bookmarks.md"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "2FA",
+      "item": [
+        {
+          "name": "Set up 2FA",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/2fa/setup",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "2fa",
+                "setup"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/set-up-2fa.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/set-up-2fa.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Enable 2FA",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/2fa/enable",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "2fa",
+                "enable"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/enable-2fa.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/enable-2fa.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Verify 2FA",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/2fa/verify",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "2fa",
+                "verify"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/verify-2fa.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/verify-2fa.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Set up New Device for 2FA",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/2fa/device/setup",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "2fa",
+                "device",
+                "setup"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/set-up-new-device-for-2fa.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/set-up-new-device-for-2fa.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Devices for 2FA",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/2fa/devices",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "2fa",
+                "devices"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-devices-for-2fa.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-devices-for-2fa.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Backup Codes for 2FA",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/2fa/backup_codes",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "2fa",
+                "backup_codes"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/get-backup-codes-for-2fa.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-backup-codes-for-2fa.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Revoke Device for 2FA",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/2fa/device/revoke",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "2fa",
+                "device",
+                "revoke"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/revoke-device-for-2fa.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/revoke-device-for-2fa.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Enable/Disable 2FA for Workspace",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/2fa/workspace",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "2fa",
+                "workspace"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/enable-disable-2fa-for-workspace.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/enable-disable-2fa-for-workspace.md"
+          },
+          "response": []
+        },
+        {
+          "name": "Disable 2FA",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{MULTILOGIN_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{MULTILOGIN_API}}/2fa/disable",
+              "host": [
+                "{{MULTILOGIN_API}}"
+              ],
+              "path": [
+                "2fa",
+                "disable"
+              ],
+              "variable": []
+            },
+            "description": "Generated from docs/api/endpoints/disable-2fa.md\n\nDocs: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/disable-2fa.md"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
