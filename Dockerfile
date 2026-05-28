@@ -1,6 +1,6 @@
 # Multilogin Labs sandbox — runs scripts and tools, NOT Multilogin desktop.
 # Multilogin app must run on host or another container with a desktop env.
-FROM node:20-bookworm-slim AS node-base
+FROM node:26-bookworm-slim AS node-base
 
 ENV PYTHONUNBUFFERED=1 \
     NODE_ENV=production \
