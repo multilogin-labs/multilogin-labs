@@ -1,0 +1,30 @@
+{{- if .Values.warmup.enabled }}
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ .Release.Name }}-warmup
+  labels:
+    app.kubernetes.io/name: multilogin-labs
+    app.kubernetes.io/instance: {{ .Release.Name }}
+spec:
+  schedule: "{{ .Values.warmup.schedule }}"
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 1
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: warmup
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+              imagePullPolicy: {{ .Values.image.pullPolicy }}
+              args:
+                {{- toYaml .Values.warmup.args | nindent 16 }}
+              envFrom:
+                - secretRef:
+                    name: {{ .Values.warmup.envFromSecret }}
+              resources:
+                {{- toYaml .Values.resources | nindent 16 }}
+{{- end }}

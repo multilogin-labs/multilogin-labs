@@ -1,0 +1,23 @@
+{
+  "name": "mlx-search",
+  "displayName": "Multilogin X API search",
+  "description": "Quick command-palette search across 90 Multilogin API endpoints from this repo's openapi.json.",
+  "version": "0.1.0",
+  "publisher": "multilogin-labs",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "keywords": ["multilogin", "antidetect", "automation", "openapi", "playwright"],
+  "main": "./extension.js",
+  "activationEvents": ["onCommand:mlx.search"],
+  "contributes": {
+    "commands": [
+      { "command": "mlx.search", "title": "Multilogin: Search 90 API endpoints" }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/multilogin-labs/multilogin-labs.git",
+    "directory": "extensions/vscode-mlx-search"
+  },
+  "license": "MIT"
+}

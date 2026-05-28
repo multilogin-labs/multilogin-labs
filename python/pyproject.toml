@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlx-labs"
+version = "0.1.0"
+description = "Community Python helpers + MLX client for Multilogin Labs"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Multilogin Labs" }]
+keywords = ["multilogin", "antidetect", "automation", "playwright", "selenium", "mmo", "cloud-phone"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+  "requests>=2.31",
+  "python-dotenv>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/multilogin-labs/multilogin-labs"
+Documentation = "https://multilogin-labs.github.io/multilogin-labs/"
+Issues = "https://github.com/multilogin-labs/multilogin-labs/issues"
+"Partner pricing" = "https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"
+
+[project.scripts]
+mlx-labs = "mlx_labs.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

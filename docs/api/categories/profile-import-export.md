@@ -1,12 +1,36 @@
-# Profile Import/Export
+# Profile import / export — Migration
 
-[← Hub](../README.md)
+> [Partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** · **`MIN50`** · [← API hub](../README.md) · [Cheatsheet](../CHEATSHEET.md) · [Swagger UI](../swagger.html)
 
-- **`POST`** [Profile Export](../endpoints/profile-export.md) — `https://api.multilogin.com/profile/export`
-- **`GET`** [Export Status by Profile](../endpoints/export-status-by-profile.md) — `https://api.multilogin.com/profile/export/status`
-- **`GET`** [Export Status All](../endpoints/export-status-all.md) — `https://api.multilogin.com/profile/export/status/all`
-- **`POST`** [Profile Import](../endpoints/profile-import.md) — `https://api.multilogin.com/profile/import`
-- **`GET`** [Import Status by Profile](../endpoints/import-status-by-profile.md) — `https://api.multilogin.com/profile/import/status`
-- **`GET`** [Import Status All](../endpoints/import-status-all.md) — `https://api.multilogin.com/profile/import/status/all`
+Move profiles between workspaces, back up cookies, and migrate from other antidetect tools.
 
-[https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
+## Endpoints in this category
+
+_(see API hub)_
+
+## Common use cases
+
+- Migrate from AdsPower/GoLogin to Multilogin
+- Backup before bulk delete
+- Move profiles between client workspaces
+
+## Quick example
+
+```python
+from lib.mlx_client import MLXClient
+import json, os
+
+c = MLXClient(token=os.environ["MULTILOGIN_TOKEN"])
+# Export single profile
+data = c.export_profile(os.environ["MULTILOGIN_PROFILE_ID"])
+open("profile_backup.json", "w").write(json.dumps(data, indent=2))
+```
+
+## Related
+
+- [Cookbook ×40](../cookbook/README.md)
+- [Related guide](../cookbook/12-profile-export-migrate.md)
+- [Quick start](../quick-start.md) · [Authentication](../authentication.md)
+- [SEARCH_INDEX](../../SEARCH_INDEX.md)
+
+**Keywords:** multilogin profile import export api · multilogin x · migration

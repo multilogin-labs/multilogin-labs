@@ -1,0 +1,18 @@
+apiVersion: v2
+name: multilogin-labs
+description: Helm chart that deploys the Multilogin Labs Docker image as a CronJob (warmup scheduler) and a small Pages mirror.
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+home: https://github.com/multilogin-labs/multilogin-labs
+sources:
+  - https://github.com/multilogin-labs/multilogin-labs
+maintainers:
+  - name: Multilogin Labs
+    url: https://github.com/multilogin-labs
+keywords:
+  - multilogin
+  - antidetect
+  - automation
+  - mmo
+  - cloud-phone

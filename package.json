@@ -13,7 +13,12 @@
     "proxy:check": "node tools/proxy-check.mjs",
     "plan": "node tools/plan-calculator.mjs",
     "api:search": "node tools/api-search.mjs",
+    "openapi": "node tools/generate_openapi.mjs",
+    "postman:env": "node tools/generate_postman_env.mjs",
+    "search:index": "node tools/build_search_index.mjs",
     "sitemap": "node tools/generate_sitemap.mjs",
+    "warmup": "node tools/warmup-scheduler.mjs",
+    "bench": "node tools/benchmark.mjs",
     "upgrade": "bash tools/upgrade_all.sh"
   },
   "engines": {

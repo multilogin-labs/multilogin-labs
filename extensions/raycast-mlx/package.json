@@ -1,0 +1,27 @@
+{
+  "name": "mlx-search",
+  "title": "Multilogin X API",
+  "description": "Search 90 Multilogin X API endpoints from Raycast.",
+  "icon": "command-icon.png",
+  "author": "multilogin-labs",
+  "license": "MIT",
+  "categories": ["Developer Tools", "Documentation"],
+  "version": "0.1.0",
+  "commands": [
+    {
+      "name": "search-endpoints",
+      "title": "Search Multilogin Endpoints",
+      "subtitle": "Multilogin X API",
+      "description": "Quick-find any of the 90 documented endpoints.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.70.0"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "lint": "ray lint"
+  }
+}

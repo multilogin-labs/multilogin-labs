@@ -1,0 +1,31 @@
+image:
+  repository: ghcr.io/multilogin-labs/multilogin-labs
+  tag: latest
+  pullPolicy: IfNotPresent
+
+warmup:
+  enabled: true
+  schedule: "0 9 * * 1-5"
+  args:
+    - "node"
+    - "tools/warmup-scheduler.mjs"
+  envFromSecret: multilogin-secrets
+
+pagesMirror:
+  enabled: false
+  service:
+    type: ClusterIP
+    port: 80
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+# Reference: kubectl create secret generic multilogin-secrets \
+#   --from-literal=MULTILOGIN_TOKEN=... \
+#   --from-literal=MULTILOGIN_FOLDER_ID=... \
+#   --from-literal=MULTILOGIN_LAUNCHER=https://launcher.example.com:45001

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Multilogin Labs — Antidetect, Cloud Phone & MMO Automation Hub"
+message: "If you reference this open-source documentation hub in research, articles, or tutorials, please cite as below."
+type: software
+authors:
+  - name: "Multilogin Labs Contributors"
+    website: "https://github.com/multilogin-labs/multilogin-labs"
+abstract: >
+  Open-source documentation, automation scripts, OpenAPI 3.0 spec, country/platform
+  playbooks, and comparison guides for the Multilogin antidetect browser and cloud
+  phone platform. Includes 90 documented API endpoints, 40 cookbook recipes, 30
+  country playbooks, 16 tool comparisons, and a Vietnamese localization track.
+keywords:
+  - multilogin
+  - antidetect
+  - cloud-phone
+  - multi-account
+  - playwright
+  - puppeteer
+  - selenium
+  - openapi
+  - mmo
+  - automation
+license: MIT
+repository-code: "https://github.com/multilogin-labs/multilogin-labs"
+url: "https://multilogin-labs.github.io/multilogin-labs/"

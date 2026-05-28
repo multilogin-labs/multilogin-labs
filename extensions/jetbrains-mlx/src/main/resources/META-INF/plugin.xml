@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>dev.mlxlabs.mlx-search</id>
+    <name>Multilogin X API search</name>
+    <vendor email="" url="https://github.com/multilogin-labs/multilogin-labs">Multilogin Labs</vendor>
+    <description><![CDATA[
+        Search the 90 Multilogin X API endpoints right from the IDE.
+        Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd>, type "Multilogin: Search API endpoints".
+        Opens the relevant endpoint doc on GitHub.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="MlxSearchAction"
+                class="dev.mlxlabs.MlxSearchAction"
+                text="Multilogin: Search API endpoints"
+                description="Search 90 Multilogin X API endpoints">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

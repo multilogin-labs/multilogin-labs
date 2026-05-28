@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Multilogin bookmarklets</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #0d1117; color: #e6edf3; padding: 2rem; max-width: 760px; margin: 0 auto; }
+  h1 { color: #0066FF; }
+  a.bm { display: inline-block; background: #0066FF; color: #fff; padding: 0.6rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 600; margin: 0.5rem 0.5rem 0.5rem 0; }
+  pre { background: #161b22; padding: 1rem; border-radius: 6px; border: 1px solid #30363d; overflow-x: auto; }
+  code { color: #79c0ff; }
+</style>
+</head>
+<body>
+<h1>Multilogin Labs · bookmarklets</h1>
+<p>Drag any button below into your bookmarks bar. They open helpful pages in a new tab.</p>
+
+<a class="bm" href="javascript:(()=>window.open('https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549','_blank'))();">→ Multilogin partner pricing</a>
+
+<a class="bm" href="javascript:(()=>{const q=encodeURIComponent(prompt('Search Multilogin Labs:')||'');if(q)window.open('https://multilogin-labs.github.io/multilogin-labs/search.html?q='+q,'_blank');})();">🔍 Search Multilogin Labs</a>
+
+<a class="bm" href="javascript:(()=>window.open('https://multilogin-labs.github.io/multilogin-labs/api/swagger.html','_blank'))();">📡 Open Swagger UI</a>
+
+<a class="bm" href="javascript:(()=>window.open('https://multilogin-labs.github.io/multilogin-labs/calculator.html','_blank'))();">📊 Open plan calculator</a>
+
+<a class="bm" href="javascript:(()=>window.open('https://multilogin-labs.github.io/multilogin-labs/comparisons/comparison-matrix.md','_blank'))();">⚔️ Compare 16 tools</a>
+
+<h2>Source</h2>
+<p>Each bookmarklet is a one-line <code>javascript:</code> URL. Inspect any link above before saving.</p>
+
+<pre><code>// Search Multilogin Labs (prompt + new tab)
+javascript:(()=>{const q=encodeURIComponent(prompt('Search Multilogin Labs:')||'');if(q)window.open('https://multilogin-labs.github.io/multilogin-labs/search.html?q='+q,'_blank');})();</code></pre>
+
+<p style="margin-top:2rem"><a href="../docs/index.html" style="color:#58a6ff">← Back to hub</a></p>
+</body>
+</html>

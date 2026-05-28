@@ -1,7 +1,7 @@
 # Multilogin X API Cookbook
 
 
-**40 recipes**
+**60 recipes**
 
 | # | Recipe |
 |---|---|
@@ -47,3 +47,23 @@
 | 38 | [38-2fa-signin-script.md](38-2fa-signin-script.md) |
 | 39 | [39-workspace-member-invite.md](39-workspace-member-invite.md) |
 | 40 | [40-disaster-recovery-stop-all.md](40-disaster-recovery-stop-all.md) |
+| 41 | [Audit cookies across many profiles](41-audit-cookies-bulk.md) |
+| 42 | [Multi-tab Playwright workflow](42-playwright-multi-tab.md) |
+| 43 | [Screenshot grid for QA](43-puppeteer-screenshot-grid.md) |
+| 44 | [Selenium explicit waits pattern](44-selenium-explicit-wait.md) |
+| 45 | [Record + replay session events](45-session-replay-record.md) |
+| 46 | [Run anti-bot tests on a profile](46-anti-bot-test-loop.md) |
+| 47 | [Captcha solver integration shape](47-captcha-solver-hookin.md) |
+| 48 | [Cookie jar rotation helper](48-cookie-jar-export-rotate.md) |
+| 49 | [Proxy failover and retry logic](49-proxy-failover.md) |
+| 50 | [Bulk rename tags across profiles](50-bulk-tag-rename.md) |
+| 51 | [Scheduled warmup with cron](51-scheduled-warmup-cron.md) |
+| 52 | [Prometheus metrics exporter shape](52-metrics-prometheus-exporter.md) |
+| 53 | [Slack alert on profile errors](53-slack-alerting.md) |
+| 54 | [Discord webhook for status pings](54-discord-alerting.md) |
+| 55 | [Import profiles from CSV](55-csv-import-profiles.md) |
+| 56 | [Export profile status to CSV](56-csv-export-status.md) |
+| 57 | [Exponential backoff for rate limits](57-ratelimit-backoff.md) |
+| 58 | [Rotate 2FA backup codes](58-two-fa-rotate-backup.md) |
+| 59 | [Agency onboarding script](59-agency-onboarding-script.md) |
+| 60 | [Self-hosted CI runner pattern](60-self-hosted-runner-pattern.md) |

@@ -1,0 +1,11 @@
+{
+  "_comment": "Configure Giscus once Discussions are enabled. Visit https://giscus.app/ to generate IDs.",
+  "origins": [
+    "https://multilogin-labs.github.io",
+    "https://github.com/multilogin-labs/multilogin-labs"
+  ],
+  "originsRegex": [
+    "^https://multilogin-labs\\.github\\.io"
+  ],
+  "defaultCommentOrder": "newest"
+}

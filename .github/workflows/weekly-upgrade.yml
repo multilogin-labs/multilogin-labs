@@ -1,0 +1,41 @@
+name: Weekly auto-upgrade
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  upgrade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run upgrade
+        run: |
+          python3 tools/upgrade_repo.py
+          node tools/generate_openapi.mjs
+          node tools/generate_sitemap.mjs
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/weekly-upgrade
+          commit-message: "chore: weekly docs auto-upgrade"
+          title: "chore: weekly docs auto-upgrade"
+          body: |
+            Automated weekly regeneration of:
+            - comparisons enrichment + matrix
+            - learn paths
+            - cookbook indexes
+            - OpenAPI spec from endpoints.json
+            - sitemap (docs/sitemap.xml)
+          labels: automated,docs

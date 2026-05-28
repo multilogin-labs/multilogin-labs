@@ -1,6 +1,10 @@
-# Object Storage
+# Object storage — Workspace files & artifacts
 
-[← Hub](../README.md)
+> [Partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** · **`MIN50`** · [← API hub](../README.md) · [Cheatsheet](../CHEATSHEET.md) · [Swagger UI](../swagger.html)
+
+Upload screenshots, exports, and shared assets at workspace level.
+
+## Endpoints in this category
 
 - **`POST`** [Upload Object](../endpoints/upload-object.md) — `https://api.multilogin.com/storage/upload`
 - **`POST`** [Create and Upload](../endpoints/create-and-upload.md) — `https://api.multilogin.com/storage/create_upload`
@@ -19,4 +23,25 @@
 - **`POST`** [Disable Extension](../endpoints/disable-extension.md) — `https://api.multilogin.com/storage/extension/disable`
 - **`POST`** [List of Objects per Profile](../endpoints/list-of-objects-per-profile.md) — `https://api.multilogin.com/storage/profile/objects`
 
-[https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
+## Common use cases
+
+- Store proof-of-task screenshots for clients
+- Share warmup logs across the team
+- Persist exported profiles for retention policy
+
+## Quick example
+
+```bash
+curl -X POST https://api.multilogin.com/storage/upload \
+  -H "Authorization: Bearer $MULTILOGIN_TOKEN" \
+  -F "file=@screenshot.png" \
+  -F "tag=campaign-q3" 
+```
+
+## Related
+
+- [Cookbook ×40](../cookbook/README.md)
+- [Quick start](../quick-start.md) · [Authentication](../authentication.md)
+- [SEARCH_INDEX](../../SEARCH_INDEX.md)
+
+**Keywords:** multilogin object storage api · multilogin x · workspace files & artifacts

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multilogin Labs — Updates</title>
+    <link>https://multilogin-labs.github.io/multilogin-labs/</link>
+    <description>Antidetect, cloud phone, Multilogin X API, MMO playbooks. Partner pricing inside.</description>
+    <language>en</language>
+    <atom:link href="https://multilogin-labs.github.io/multilogin-labs/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>v4 mega upgrade — 480+ docs, OpenAPI, Swagger UI, calculator</title>
+      <link>https://github.com/multilogin-labs/multilogin-labs</link>
+      <guid isPermaLink="false">multilogin-labs-v4</guid>
+      <description>OpenAPI 3.0 spec from 90 endpoints, Swagger UI, calculator.html, weekly auto-upgrade Action, 12 Vietnamese guides, long-form comparisons.</description>
+    </item>
+    <item>
+      <title>Cookbook expanded to 40 recipes</title>
+      <link>https://github.com/multilogin-labs/multilogin-labs/tree/main/docs/api/cookbook</link>
+      <guid isPermaLink="false">cookbook-40</guid>
+      <description>Includes Playwright, Selenium, Puppeteer, 2FA, parallel sessions, disaster recovery patterns.</description>
+    </item>
+    <item>
+      <title>Comparison matrix — 16 antidetect tools</title>
+      <link>https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/comparisons/comparison-matrix.md</link>
+      <guid isPermaLink="false">matrix-16</guid>
+      <description>One-page matrix plus deep-dive sections for AdsPower, GoLogin, Octo, Dolphin Anty.</description>
+    </item>
+    <item>
+      <title>30 country playbooks — VN, ID, BR, IN, USA, DE...</title>
+      <link>https://github.com/multilogin-labs/multilogin-labs/tree/main/docs/playbooks</link>
+      <guid isPermaLink="false">playbooks-30</guid>
+      <description>MMO-ready setup per market: proxy, plan, platform.</description>
+    </item>
+  </channel>
+</rss>

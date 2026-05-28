@@ -1,0 +1,41 @@
+name: PR summary
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Compute stats
+        id: stats
+        run: |
+          ADDED=$(git diff --shortstat origin/main...HEAD | awk '{print $4 "/" $6}')
+          MD=$(git diff --name-only origin/main...HEAD | grep -c '\.md$' || true)
+          SCRIPTS=$(git diff --name-only origin/main...HEAD | grep -E '\.(mjs|js|py)$' | wc -l | tr -d ' ' || true)
+          echo "added=$ADDED" >> $GITHUB_OUTPUT
+          echo "md=$MD" >> $GITHUB_OUTPUT
+          echo "scripts=$SCRIPTS" >> $GITHUB_OUTPUT
+      - name: Comment on PR
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            ## 🤖 PR summary
+            - Diff (additions/removals): `${{ steps.stats.outputs.added }}`
+            - Markdown files changed: **${{ steps.stats.outputs.md }}**
+            - Script files changed: **${{ steps.stats.outputs.scripts }}**
+
+            Reminders:
+            - Did you regenerate `docs/sitemap.xml` (`npm run sitemap`)?
+            - Does `npm run upgrade` still pass locally?
+            - Partner link uses full UTM URL?
+
+            [Contributing guide](../CONTRIBUTING.md) · [SEARCH_INDEX](../docs/SEARCH_INDEX.md)

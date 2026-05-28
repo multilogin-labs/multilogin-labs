@@ -19,14 +19,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
       - name: Build site
         run: |
           mkdir -p _site
+          node tools/generate_openapi.mjs || true
+          node tools/build_search_index.mjs || true
+          node tools/generate_postman_env.mjs || true
+          node tools/generate_sitemap.mjs || true
           cp docs/index.html _site/index.html
           cp -r docs _site/docs
           cp llms.txt _site/llms.txt 2>/dev/null || true
-          node tools/generate_sitemap.mjs || true
           cp docs/sitemap.xml _site/sitemap.xml 2>/dev/null || true
+          cp docs/feed.xml _site/feed.xml 2>/dev/null || true
+          cp docs/calculator.html _site/calculator.html 2>/dev/null || true
+          cp docs/search.html _site/search.html 2>/dev/null || true
+          cp docs/search-index.json _site/search-index.json 2>/dev/null || true
+          cp tools/bookmarklet.html _site/bookmarklets.html 2>/dev/null || true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

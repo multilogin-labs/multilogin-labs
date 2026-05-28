@@ -1,6 +1,10 @@
-# Launcher
+# Launcher — Local profile control
 
-[← Hub](../README.md)
+> [Partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** · **`MIN50`** · [← API hub](../README.md) · [Cheatsheet](../CHEATSHEET.md) · [Swagger UI](../swagger.html)
+
+Start, stop, and monitor profiles on the local Multilogin desktop. Required for Playwright/Puppeteer/Selenium.
+
+## Endpoints in this category
 
 - **`GET`** [Start Browser Profile](../endpoints/start-browser-profile.md) — `https://launcher.mlx.yt:45001/api/v2/profile/f/:folder_id/p/:profile_id/start`
 - **`POST`** [Start Quick Profile v3](../endpoints/start-quick-profile-v3.md) — `https://launcher.mlx.yt:45001/api/v3/profile/quick`
@@ -21,4 +25,29 @@
 - **`POST`** [Convert QBP to Profile](../endpoints/convert-qbp-to-profile.md) — `https://launcher.mlx.yt:45001/api/v1/profile/convert_qbp`
 - **`GET`** [Get QBP Status](../endpoints/get-qbp-status.md) — `https://launcher.mlx.yt:45001/api/v1/profile/qbp_status`
 
-[https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
+## Common use cases
+
+- Open a profile and connect Playwright to its CDP port
+- Launch quick profiles on demand for scraping
+- Stop all profiles for emergency / shift change
+
+## Quick example
+
+```bash
+# Start profile in playwright mode
+curl "https://launcher.mlx.yt:45001/api/v2/profile/f/$FOLDER/p/$PROFILE/start?automation_type=playwright" \
+  -H "Authorization: Bearer $MULTILOGIN_TOKEN"
+
+# Stop profile
+curl "https://launcher.mlx.yt:45001/api/v1/profile/stop?profile_id=$PROFILE" \
+  -H "Authorization: Bearer $MULTILOGIN_TOKEN" 
+```
+
+## Related
+
+- [Cookbook ×40](../cookbook/README.md)
+- [Related guide](../../guides/multilogin-api-playwright.md)
+- [Quick start](../quick-start.md) · [Authentication](../authentication.md)
+- [SEARCH_INDEX](../../SEARCH_INDEX.md)
+
+**Keywords:** multilogin launcher api · multilogin x · local profile control

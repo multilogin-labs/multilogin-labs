@@ -1,6 +1,10 @@
-# Profile Access Management
+# Profile access management — Sharing & permissions
 
-[← Hub](../README.md)
+> [Partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** · **`MIN50`** · [← API hub](../README.md) · [Cheatsheet](../CHEATSHEET.md) · [Swagger UI](../swagger.html)
+
+Share profiles with team members, transfer ownership, manage roles.
+
+## Endpoints in this category
 
 - **`POST`** [User Sign In](../endpoints/user-sign-in.md) — `https://api.multilogin.com/user/signin`
 - **`POST`** [User Refresh Token (Switch Workspace)](../endpoints/user-refresh-token-switch-workspace.md) — `https://api.multilogin.com/user/refresh_token`
@@ -18,4 +22,26 @@
 - **`POST`** [Workspace Remove Folders](../endpoints/workspace-remove-folders.md) — `https://api.multilogin.com/workspace/folders/remove`
 - **`POST`** [Workspace Leave](../endpoints/workspace-leave.md) — `https://api.multilogin.com/workspace/leave`
 
-[https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
+## Common use cases
+
+- Onboard a new agency member to a client folder
+- Revoke access when an operator leaves
+- Audit who has access to which profile
+
+## Quick example
+
+```bash
+curl -X POST https://api.multilogin.com/profile/share \
+  -H "Authorization: Bearer $MULTILOGIN_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"profile_id":"...","member_email":"ops@example.com","role":"editor"}'
+```
+
+## Related
+
+- [Cookbook ×40](../cookbook/README.md)
+- [Related guide](../../guides/multilogin-team-workspace.md)
+- [Quick start](../quick-start.md) · [Authentication](../authentication.md)
+- [SEARCH_INDEX](../../SEARCH_INDEX.md)
+
+**Keywords:** multilogin profile access management api · multilogin x · sharing & permissions

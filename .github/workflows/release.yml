@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Generate release notes from changelog
+        id: notes
+        run: |
+          if [ -f docs/changelog.md ]; then
+            head -n 80 docs/changelog.md > _release.md
+          else
+            echo "Release ${GITHUB_REF_NAME}" > _release.md
+          fi
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: _release.md
+          generate_release_notes: true
+          files: |
+            docs/api/openapi.json
+            docs/api/openapi.yaml
+            docs/sitemap.xml
+            llms.txt
+            AWESOME.md

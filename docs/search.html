@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search · Multilogin Labs</title>
+  <meta name="description" content="Search the Multilogin Labs hub — 500+ pages on antidetect, cloud phone, MMO, and Multilogin X API.">
+  <style>
+    :root { --blue: #0066FF; --bg: #0d1117; --card: #161b22; --text: #e6edf3; --muted: #8b949e; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 2rem; line-height: 1.6; }
+    .wrap { max-width: 880px; margin: 0 auto; }
+    h1 { color: var(--blue); margin-bottom: 0.5rem; }
+    .muted { color: var(--muted); }
+    input { width: 100%; padding: 0.85rem; background: var(--card); color: var(--text); border: 1px solid #30363d; border-radius: 8px; font-size: 1.1rem; }
+    .stat { color: var(--muted); margin-top: 0.5rem; font-size: 0.9rem; }
+    .hit { background: var(--card); border: 1px solid #30363d; border-radius: 8px; padding: 1rem; margin-top: 0.75rem; }
+    .hit a { color: #58a6ff; font-weight: 600; text-decoration: none; }
+    .hit a:hover { text-decoration: underline; }
+    .hit p { margin: 0.4rem 0 0; color: var(--muted); font-size: 0.92rem; }
+    mark { background: #ffd7331a; color: var(--blue); padding: 0 2px; border-radius: 3px; }
+    .top-links { margin-top: 1rem; }
+    .top-links a { color: #58a6ff; margin-right: 1rem; font-size: 0.9rem; }
+    .empty { text-align: center; color: var(--muted); margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Search Multilogin Labs</h1>
+    <p class="muted">Client-side full-text search across the entire hub. Try: <code>playwright</code>, <code>tiktok</code>, <code>2fa</code>, <code>quick profile</code>.</p>
+    <input id="q" type="search" placeholder="Search 500+ pages…" autofocus>
+    <div class="stat" id="stat"></div>
+    <div class="top-links">
+      <a href="index.html">Hub</a>
+      <a href="api/swagger.html">Swagger UI</a>
+      <a href="api/CHEATSHEET.md">API cheatsheet</a>
+      <a href="comparisons/comparison-matrix.md">Compare 16 tools</a>
+      <a href="calculator.html">Plan calculator</a>
+    </div>
+    <div id="results"></div>
+    <p class="empty" id="empty">Type to search…</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <script>
+    const input = document.getElementById("q");
+    const out = document.getElementById("results");
+    const stat = document.getElementById("stat");
+    const empty = document.getElementById("empty");
+
+    let docs = [];
+    let idx;
+
+    fetch("search-index.json")
+      .then((r) => r.json())
+      .then((data) => {
+        docs = data;
+        idx = lunr(function () {
+          this.ref("id");
+          this.field("title", { boost: 5 });
+          this.field("body");
+          for (const d of docs) this.add(d);
+        });
+        stat.textContent = `Indexed ${docs.length.toLocaleString()} pages.`;
+      });
+
+    function highlight(text, q) {
+      if (!q) return text;
+      const parts = q.split(/\s+/).filter((t) => t.length > 1);
+      let html = text;
+      for (const p of parts) {
+        html = html.replace(
+          new RegExp(`(${p.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&")})`, "gi"),
+          "<mark>$1</mark>",
+        );
+      }
+      return html;
+    }
+
+    function render(query) {
+      const q = (query || "").trim();
+      out.innerHTML = "";
+      if (!idx || q.length < 2) {
+        empty.style.display = q.length < 2 ? "block" : "none";
+        return;
+      }
+      empty.style.display = "none";
+      let hits = [];
+      try { hits = idx.search(q); } catch { hits = idx.search(q.replace(/[^a-z0-9 ]/gi, " ")); }
+      stat.textContent = `${hits.length} match${hits.length === 1 ? "" : "es"}`;
+      for (const h of hits.slice(0, 50)) {
+        const d = docs.find((x) => x.id === h.ref);
+        if (!d) continue;
+        const node = document.createElement("div");
+        node.className = "hit";
+        node.innerHTML =
+          `<a href="${d.url}">${highlight(d.title, q)}</a>` +
+          `<p>${highlight(d.body.slice(0, 220), q)}…</p>` +
+          `<p style="font-size:.78rem;opacity:.6">${d.url}</p>`;
+        out.appendChild(node);
+      }
+    }
+
+    input.addEventListener("input", (e) => render(e.target.value));
+    const initial = new URLSearchParams(location.search).get("q");
+    if (initial) { input.value = initial; render(initial); }
+  </script>
+</body>
+</html>

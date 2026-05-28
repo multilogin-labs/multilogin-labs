@@ -1,0 +1,25 @@
+name: Country / platform playbook request
+description: Request a new MMO playbook
+title: "[Playbook] "
+labels: ["playbook", "docs"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Country playbook
+        - Platform playbook
+        - Use-case playbook
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Target (country or platform name)
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Local context, popular platforms, payment methods, language

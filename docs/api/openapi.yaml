@@ -1,0 +1,1738 @@
+openapi: "3.0.3"
+info:
+  title: "Multilogin X API (Community Reference)"
+  version: "1.0.0"
+  description: "Community OpenAPI spec generated from official Multilogin Postman collection. Partner pricing: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549"
+  contact:
+    name: "Multilogin Labs"
+    url: "https://github.com/multilogin-labs/multilogin-labs"
+  license:
+    name: "MIT"
+servers:
+  - url: "https://api.multilogin.com"
+    description: "Cloud API"
+  - url: "https://launcher.mlx.yt:45001"
+    description: "Local Launcher"
+tags:
+  - name: "Launcher"
+  - name: "Profile Access Management"
+  - name: "Profile Management"
+  - name: "Browser Profile Data"
+  - name: "Proxy"
+  - name: "Pre-made Cookies"
+  - name: "Script Runner"
+  - name: "Profile Import/Export"
+  - name: "Object Storage"
+  - name: "Bookmark Management"
+  - name: "2FA"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: "http"
+      scheme: "bearer"
+      bearerFormat: "JWT"
+paths:
+  /api/v2/profile/f/{folder_id}/p/{profile_id}/start:
+    get:
+      tags:
+        - "Script Runner"
+      summary: "Start Browser Profile with Selenium"
+      operationId: "start_browser_profile_with_selenium"
+      parameters:
+        - name: "folder_id"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            format: "uuid"
+          description: "folder_id UUID from Multilogin app"
+        - name: "profile_id"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+            format: "uuid"
+          description: "profile_id UUID from Multilogin app"
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/start-browser-profile-with-selenium.md"
+  /api/v3/profile/quick:
+    post:
+      tags:
+        - "Launcher"
+      summary: "Start Quick Profile v3"
+      operationId: "start_quick_profile_v3"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/start-quick-profile-v3.md"
+  /api/v2/profile/quick:
+    post:
+      tags:
+        - "Launcher"
+      summary: "Start Quick Profile (Deprecated)"
+      operationId: "start_quick_profile_deprecated"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/start-quick-profile-deprecated.md"
+  /api/v1/profile/stop:
+    get:
+      tags:
+        - "Launcher"
+      summary: "Stop Browser Profile"
+      operationId: "stop_browser_profile"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/stop-browser-profile.md"
+  /api/v1/profile/stop_all:
+    get:
+      tags:
+        - "Launcher"
+      summary: "Stop All Profiles"
+      operationId: "stop_all_profiles"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/stop-all-profiles.md"
+  /api/v1/version:
+    get:
+      tags:
+        - "Launcher"
+      summary: "Get Version"
+      operationId: "get_version"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-version.md"
+  /api/v1/profile/active:
+    get:
+      tags:
+        - "Launcher"
+      summary: "Get Profile Status"
+      operationId: "get_profile_status"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-profile-status.md"
+  /api/v2/profile/active:
+    get:
+      tags:
+        - "Launcher"
+      summary: "Get All Profiles Status"
+      operationId: "get_all_profiles_status"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-all-profiles-status.md"
+  /api/v1/quick-profiles/active:
+    get:
+      tags:
+        - "Launcher"
+      summary: "Get All Quick Profiles Status"
+      operationId: "get_all_quick_profiles_status"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-all-quick-profiles-status.md"
+  /api/v1/core/loaded:
+    get:
+      tags:
+        - "Launcher"
+      summary: "Loaded Browser Cores"
+      operationId: "loaded_browser_cores"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/loaded-browser-cores.md"
+  /api/v1/core/list:
+    get:
+      tags:
+        - "Launcher"
+      summary: "Browser Core List"
+      operationId: "browser_core_list"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/browser-core-list.md"
+  /api/v1/core/load:
+    get:
+      tags:
+        - "Launcher"
+      summary: "Load Browser Core"
+      operationId: "load_browser_core"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/load-browser-core.md"
+  /api/v1/core:
+    delete:
+      tags:
+        - "Launcher"
+      summary: "Delete Browser Core"
+      operationId: "delete_browser_core"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/delete-browser-core.md"
+  /api/v1/proxy/validate:
+    post:
+      tags:
+        - "Launcher"
+      summary: "Validate Proxy"
+      operationId: "validate_proxy"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/validate-proxy.md"
+  /api/v1/cookies/import:
+    post:
+      tags:
+        - "Launcher"
+      summary: "Cookie Import"
+      operationId: "cookie_import"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/cookie-import.md"
+  /api/v1/cookies/export:
+    post:
+      tags:
+        - "Launcher"
+      summary: "Cookie Export"
+      operationId: "cookie_export"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/cookie-export.md"
+  /api/v1/profile/convert_qbp:
+    post:
+      tags:
+        - "Launcher"
+      summary: "Convert QBP to Profile"
+      operationId: "convert_qbp_to_profile"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/convert-qbp-to-profile.md"
+  /api/v1/profile/qbp_status:
+    get:
+      tags:
+        - "Launcher"
+      summary: "Get QBP Status"
+      operationId: "get_qbp_status"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-qbp-status.md"
+  /user/signin:
+    post:
+      tags:
+        - "Profile Access Management"
+      summary: "User Sign In"
+      operationId: "user_sign_in"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-sign-in.md"
+  /user/refresh_token:
+    post:
+      tags:
+        - "Profile Access Management"
+      summary: "User Refresh Token (Switch Workspace)"
+      operationId: "user_refresh_token_switch_workspace"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-refresh-token-switch-workspace.md"
+  /user/revoke_token:
+    post:
+      tags:
+        - "Profile Access Management"
+      summary: "User Revoke Token"
+      operationId: "user_revoke_token"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-revoke-token.md"
+  /user/change_password:
+    post:
+      tags:
+        - "Profile Access Management"
+      summary: "User Change Password"
+      operationId: "user_change_password"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-change-password.md"
+  /user/workspaces:
+    get:
+      tags:
+        - "Profile Access Management"
+      summary: "User Workspaces"
+      operationId: "user_workspaces"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-workspaces.md"
+  /user/tokens:
+    get:
+      tags:
+        - "Profile Access Management"
+      summary: "User Token List"
+      operationId: "user_token_list"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/user-token-list.md"
+  /workspace/restrictions:
+    get:
+      tags:
+        - "Profile Access Management"
+      summary: "Workspace Restrictions"
+      operationId: "workspace_restrictions"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-restrictions.md"
+  /workspace/folders:
+    get:
+      tags:
+        - "Profile Access Management"
+      summary: "Workspace Folders"
+      operationId: "workspace_folders"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-folders.md"
+  /workspace/folders/user:
+    get:
+      tags:
+        - "Profile Access Management"
+      summary: "Workspace Folders For User"
+      operationId: "workspace_folders_for_user"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-folders-for-user.md"
+  /workspace/statistics:
+    get:
+      tags:
+        - "Profile Access Management"
+      summary: "Workspace Statistics"
+      operationId: "workspace_statistics"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-statistics.md"
+  /workspace/automation_token:
+    get:
+      tags:
+        - "Profile Access Management"
+      summary: "Workspace Automation Token"
+      operationId: "workspace_automation_token"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-automation-token.md"
+  /workspace/folder/create:
+    post:
+      tags:
+        - "Profile Access Management"
+      summary: "Workspace Create Folder"
+      operationId: "workspace_create_folder"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-create-folder.md"
+  /workspace/folder/update:
+    post:
+      tags:
+        - "Profile Access Management"
+      summary: "Workspace Update Folder"
+      operationId: "workspace_update_folder"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-update-folder.md"
+  /workspace/folders/remove:
+    post:
+      tags:
+        - "Profile Access Management"
+      summary: "Workspace Remove Folders"
+      operationId: "workspace_remove_folders"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-remove-folders.md"
+  /workspace/leave:
+    post:
+      tags:
+        - "Profile Access Management"
+      summary: "Workspace Leave"
+      operationId: "workspace_leave"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/workspace-leave.md"
+  /profile/create:
+    post:
+      tags:
+        - "Profile Management"
+      summary: "Profile Create"
+      operationId: "profile_create"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-create.md"
+  /profile/search:
+    post:
+      tags:
+        - "Profile Management"
+      summary: "Profile Search"
+      operationId: "profile_search"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-search.md"
+  /profile/remove:
+    post:
+      tags:
+        - "Profile Management"
+      summary: "Profile Remove"
+      operationId: "profile_remove"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-remove.md"
+  /profile/update:
+    post:
+      tags:
+        - "Profile Management"
+      summary: "Profile Update"
+      operationId: "profile_update"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-update.md"
+  /profile/move:
+    post:
+      tags:
+        - "Profile Management"
+      summary: "Profile Move"
+      operationId: "profile_move"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-move.md"
+  /profile/partial_update:
+    post:
+      tags:
+        - "Profile Management"
+      summary: "Profile Partial Update"
+      operationId: "profile_partial_update"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-partial-update.md"
+  /profile/restore:
+    post:
+      tags:
+        - "Profile Management"
+      summary: "Profile Restore"
+      operationId: "profile_restore"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-restore.md"
+  /profile/metas:
+    post:
+      tags:
+        - "Profile Management"
+      summary: "Profile Metas"
+      operationId: "profile_metas"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-metas.md"
+  /profile/summary:
+    get:
+      tags:
+        - "Profile Management"
+      summary: "Profile Summary"
+      operationId: "profile_summary"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-summary.md"
+  /profile/clone:
+    post:
+      tags:
+        - "Profile Management"
+      summary: "Profile Clone"
+      operationId: "profile_clone"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-clone.md"
+  /profile/convert:
+    post:
+      tags:
+        - "Profile Management"
+      summary: "Profile Convert"
+      operationId: "profile_convert"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-convert.md"
+  /profile/screen_resolutions:
+    get:
+      tags:
+        - "Profile Management"
+      summary: "Screen Resolution"
+      operationId: "screen_resolution"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/screen-resolution.md"
+  /profile/unlock:
+    get:
+      tags:
+        - "Browser Profile Data"
+      summary: "Unlock Locked Profiles"
+      operationId: "unlock_locked_profiles"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/unlock-locked-profiles.md"
+  /proxy/generate:
+    post:
+      tags:
+        - "Proxy"
+      summary: "Generate Proxy"
+      operationId: "generate_proxy"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/generate-proxy.md"
+  /proxy/data:
+    get:
+      tags:
+        - "Proxy"
+      summary: "Fetch Proxy Data"
+      operationId: "fetch_proxy_data"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/fetch-proxy-data.md"
+  /cookies/websites:
+    get:
+      tags:
+        - "Pre-made Cookies"
+      summary: "Target Website List"
+      operationId: "target_website_list"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/target-website-list.md"
+  /cookies/metadata/create:
+    post:
+      tags:
+        - "Pre-made Cookies"
+      summary: "Create Cookies Metadata"
+      operationId: "create_cookies_metadata"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/create-cookies-metadata.md"
+  /cookies/list:
+    get:
+      tags:
+        - "Pre-made Cookies"
+      summary: "Cookies List"
+      operationId: "cookies_list"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/cookies-list.md"
+  /cookies/metadata/update:
+    put:
+      tags:
+        - "Pre-made Cookies"
+      summary: "Update Cookies Metadata"
+      operationId: "update_cookies_metadata"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/update-cookies-metadata.md"
+  /script/start:
+    post:
+      tags:
+        - "Script Runner"
+      summary: "Start Script Runner"
+      operationId: "start_script_runner"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/start-script-runner.md"
+  /script/stop:
+    post:
+      tags:
+        - "Script Runner"
+      summary: "Stop Script Runner"
+      operationId: "stop_script_runner"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/stop-script-runner.md"
+  /script/list:
+    get:
+      tags:
+        - "Script Runner"
+      summary: "Script List"
+      operationId: "script_list"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/script-list.md"
+  /profile/export:
+    post:
+      tags:
+        - "Profile Import/Export"
+      summary: "Profile Export"
+      operationId: "profile_export"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-export.md"
+  /profile/export/status:
+    get:
+      tags:
+        - "Profile Import/Export"
+      summary: "Export Status by Profile"
+      operationId: "export_status_by_profile"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/export-status-by-profile.md"
+  /profile/export/status/all:
+    get:
+      tags:
+        - "Profile Import/Export"
+      summary: "Export Status All"
+      operationId: "export_status_all"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/export-status-all.md"
+  /profile/import:
+    post:
+      tags:
+        - "Profile Import/Export"
+      summary: "Profile Import"
+      operationId: "profile_import"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/profile-import.md"
+  /profile/import/status:
+    get:
+      tags:
+        - "Profile Import/Export"
+      summary: "Import Status by Profile"
+      operationId: "import_status_by_profile"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/import-status-by-profile.md"
+  /profile/import/status/all:
+    get:
+      tags:
+        - "Profile Import/Export"
+      summary: "Import Status All"
+      operationId: "import_status_all"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/import-status-all.md"
+  /storage/upload:
+    post:
+      tags:
+        - "Object Storage"
+      summary: "Upload Object"
+      operationId: "upload_object"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/upload-object.md"
+  /storage/create_upload:
+    post:
+      tags:
+        - "Object Storage"
+      summary: "Create and Upload"
+      operationId: "create_and_upload"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/create-and-upload.md"
+  /storage/object/usages:
+    get:
+      tags:
+        - "Object Storage"
+      summary: "Object Profile Usages"
+      operationId: "object_profile_usages"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/object-profile-usages.md"
+  /storage/types:
+    get:
+      tags:
+        - "Object Storage"
+      summary: "Get List of Object Types"
+      operationId: "get_list_of_object_types"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-list-of-object-types.md"
+  /storage/statistics:
+    get:
+      tags:
+        - "Object Storage"
+      summary: "Get Statistics for Objects"
+      operationId: "get_statistics_for_objects"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-statistics-for-objects.md"
+  /storage/objects/meta:
+    get:
+      tags:
+        - "Object Storage"
+      summary: "Get Objects Meta"
+      operationId: "get_objects_meta"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-objects-meta.md"
+  /storage/object/meta:
+    get:
+      tags:
+        - "Object Storage"
+      summary: "Get Object Meta by ID"
+      operationId: "get_object_meta_by_id"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-object-meta-by-id.md"
+  /storage/object/delete:
+    get:
+      tags:
+        - "Object Storage"
+      summary: "Delete Object"
+      operationId: "delete_object"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/delete-object.md"
+  /storage/object/restore:
+    get:
+      tags:
+        - "Object Storage"
+      summary: "Restore Object"
+      operationId: "restore_object"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/restore-object.md"
+  /storage/cloud_to_local:
+    post:
+      tags:
+        - "Object Storage"
+      summary: "Cloud to Local"
+      operationId: "cloud_to_local"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/cloud-to-local.md"
+  /storage/local_to_cloud:
+    post:
+      tags:
+        - "Object Storage"
+      summary: "Local to Cloud"
+      operationId: "local_to_cloud"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/local-to-cloud.md"
+  /storage/object/download:
+    get:
+      tags:
+        - "Object Storage"
+      summary: "Download Object"
+      operationId: "download_object"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/download-object.md"
+  /storage/extension/create:
+    post:
+      tags:
+        - "Object Storage"
+      summary: "Create Extension"
+      operationId: "create_extension"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/create-extension.md"
+  /storage/extension/enable:
+    post:
+      tags:
+        - "Object Storage"
+      summary: "Enable Extension"
+      operationId: "enable_extension"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/enable-extension.md"
+  /storage/extension/disable:
+    post:
+      tags:
+        - "Object Storage"
+      summary: "Disable Extension"
+      operationId: "disable_extension"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/disable-extension.md"
+  /storage/profile/objects:
+    post:
+      tags:
+        - "Object Storage"
+      summary: "List of Objects per Profile"
+      operationId: "list_of_objects_per_profile"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/list-of-objects-per-profile.md"
+  /bookmarks/export:
+    get:
+      tags:
+        - "Bookmark Management"
+      summary: "Export Bookmarks"
+      operationId: "export_bookmarks"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/export-bookmarks.md"
+  /bookmarks/import:
+    post:
+      tags:
+        - "Bookmark Management"
+      summary: "Import Bookmarks"
+      operationId: "import_bookmarks"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/import-bookmarks.md"
+  /bookmarks/copy:
+    post:
+      tags:
+        - "Bookmark Management"
+      summary: "Copy Bookmarks"
+      operationId: "copy_bookmarks"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/copy-bookmarks.md"
+  /2fa/setup:
+    post:
+      tags:
+        - "2FA"
+      summary: "Set up 2FA"
+      operationId: "set_up_2fa"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/set-up-2fa.md"
+  /2fa/enable:
+    post:
+      tags:
+        - "2FA"
+      summary: "Enable 2FA"
+      operationId: "enable_2fa"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/enable-2fa.md"
+  /2fa/verify:
+    post:
+      tags:
+        - "2FA"
+      summary: "Verify 2FA"
+      operationId: "verify_2fa"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/verify-2fa.md"
+  /2fa/device/setup:
+    post:
+      tags:
+        - "2FA"
+      summary: "Set up New Device for 2FA"
+      operationId: "set_up_new_device_for_2fa"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/set-up-new-device-for-2fa.md"
+  /2fa/devices:
+    get:
+      tags:
+        - "2FA"
+      summary: "Get Devices for 2FA"
+      operationId: "get_devices_for_2fa"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-devices-for-2fa.md"
+  /2fa/backup_codes:
+    get:
+      tags:
+        - "2FA"
+      summary: "Get Backup Codes for 2FA"
+      operationId: "get_backup_codes_for_2fa"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/get-backup-codes-for-2fa.md"
+  /2fa/device/revoke:
+    post:
+      tags:
+        - "2FA"
+      summary: "Revoke Device for 2FA"
+      operationId: "revoke_device_for_2fa"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/revoke-device-for-2fa.md"
+  /2fa/workspace:
+    post:
+      tags:
+        - "2FA"
+      summary: "Enable/Disable 2FA for Workspace"
+      operationId: "enable_disable_2fa_for_workspace"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/enable-disable-2fa-for-workspace.md"
+  /2fa/disable:
+    post:
+      tags:
+        - "2FA"
+      summary: "Disable 2FA"
+      operationId: "disable_2fa"
+      parameters:
+[]
+      responses:
+        200:
+          description: "Success"
+        401:
+          description: "Unauthorized — refresh token"
+        429:
+          description: "Rate limit — see automation token guide"
+      security:
+        - bearerAuth:
+[]
+      x-docs: "https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/api/endpoints/disable-2fa.md"

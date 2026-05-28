@@ -41,6 +41,40 @@ Use **Ctrl+F** on this page or GitHub repo search. Every topic links to a guide 
 | multilogin learn beginner path | [learn/beginner-antidetect.md](learn/beginner-antidetect.md) |
 | multilogin instagram shopee binance | [platforms/](platforms/) |
 | llms.txt ai discovery | [../llms.txt](../llms.txt) |
+| multilogin openapi swagger | [api/swagger.html](api/swagger.html) · [api/openapi.json](api/openapi.json) |
+| multilogin plan calculator web | [calculator.html](calculator.html) |
+| multilogin warmup scheduler | [../tools/warmup-scheduler.mjs](../tools/warmup-scheduler.mjs) |
+| multilogin benchmarks rpm | [benchmarks.md](benchmarks.md) |
+| multilogin tieng viet huong dan | [guides/vi/](guides/vi/) |
+| multilogin changelog updates rss | [changelog.md](changelog.md) · [feed.xml](feed.xml) |
+| multilogin cli npx mlx-labs | [../cli/](../cli/) · [Python](../python/) |
+| multilogin docker container ghcr | [../Dockerfile](../Dockerfile) · [docker-compose.yml](../docker-compose.yml) |
+| multilogin awesome list resources | [../AWESOME.md](../AWESOME.md) |
+| multilogin architecture mermaid diagram | [architecture.md](architecture.md) |
+| multilogin contributors stargazers | [../README.md](../README.md) |
+| multilogin org profile github | [../.github/profile/README.md](../.github/profile/README.md) |
+| multilogin search engine fulltext | [search.html](search.html) |
+| multilogin postman environment | [api/postman-environment.json](api/postman-environment.json) |
+| multilogin examples runnable | [../examples/](../examples/) |
+| multilogin vs code extension | [../extensions/vscode-mlx-search/](../extensions/vscode-mlx-search/) |
+| multilogin browser bookmarklet | [../tools/bookmarklet.html](../tools/bookmarklet.html) |
+| multilogin api categories | [api/categories/](api/categories/) |
+| multilogin guides es portugues indonesia | [guides/es/](guides/es/) · [guides/pt-br/](guides/pt-br/) · [guides/id/](guides/id/) |
+| multilogin demo gif terminal | [../demo/](../demo/) |
+| multilogin guides ru tr fr ar | [guides/ru/](guides/ru/) · [guides/tr/](guides/tr/) · [guides/fr/](guides/fr/) · [guides/ar/](guides/ar/) |
+| multilogin benchmark csv runner | [benchmarks/README.md](benchmarks/README.md) · [../tools/benchmark.mjs](../tools/benchmark.mjs) |
+| multilogin youtube videos tutorials | [videos.md](videos.md) |
+| multilogin jetbrains intellij plugin | [../extensions/jetbrains-mlx/](../extensions/jetbrains-mlx/) |
+| multilogin raycast macos extension | [../extensions/raycast-mlx/](../extensions/raycast-mlx/) |
+| multilogin sublime text plugin | [../extensions/sublime-mlx/](../extensions/sublime-mlx/) |
+| multilogin algolia docsearch | [../.github/algolia-docsearch.json](../.github/algolia-docsearch.json) |
+| multilogin giscus discussions comments | [giscus.html](giscus.html) · [../.github/giscus.json](../.github/giscus.json) |
+| multilogin blog launch posts | [blog/](blog/) |
+| multilogin newsletter rss subscribe | [newsletter.md](newsletter.md) |
+| multilogin helm kubernetes deploy | [../deploy/helm/multilogin-labs/](../deploy/helm/multilogin-labs/) |
+| multilogin terraform aws s3 | [../deploy/terraform/](../deploy/terraform/) |
+| multilogin showcase built with | [../SHOWCASE.md](../SHOWCASE.md) |
+| multilogin launch hacker news reddit | [../.github/LAUNCH_CHECKLIST.md](../.github/LAUNCH_CHECKLIST.md) |
 
 ## Antidetect & browser
 

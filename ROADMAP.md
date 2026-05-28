@@ -39,11 +39,64 @@
 - [x] `tools/upgrade_repo.py` — one-command regeneration
 - [x] GitHub Pages `docs/index.html` + sitemap (450+ URLs)
 
-## Next (v5 ideas)
+## Shipped (v5 — auto-development sweep)
 
-- [ ] Warmup scheduler CLI
-- [ ] Interactive plan calculator (web)
-- [ ] Video walkthrough embeds
-- [ ] GitHub Discussions + pinned FAQ
-- [ ] Deep-dive 3000-word comparisons
+- [x] **OpenAPI 3.0** spec from 90 endpoints + **Swagger UI**
+- [x] **Interactive calculator** — [docs/calculator.html](docs/calculator.html)
+- [x] **Warmup scheduler** CLI — `npm run warmup`
+- [x] **Weekly auto-upgrade** GitHub Action + lint-links workflow
+- [x] **Long-form deep-dive** for AdsPower, GoLogin, Octo, Dolphin
+- [x] **12 Vietnamese guides** in [docs/guides/vi/](docs/guides/vi/)
+- [x] **Benchmarks page**, **RSS feed**, **changelog**
+- [x] README badges + **star history** + GitHub stats
+
+## Shipped (v6 — "be the most-starred repo" pass)
+
+- [x] **AWESOME.md** — antidetect ecosystem star magnet
+- [x] **CLI**: `npx mlx-labs` ([cli/](cli/)) + Python `mlx-labs` ([python/](python/))
+- [x] **Docker**: [Dockerfile](Dockerfile), [compose](docker-compose.yml), GHCR workflow
+- [x] **Architecture diagrams**: [docs/architecture.md](docs/architecture.md) (Mermaid)
+- [x] **Org profile** README at [.github/profile/README.md](.github/profile/README.md)
+- [x] **Discussions templates** + comparison/playbook issue templates
+- [x] **CITATION.cff**, **CODE_OF_CONDUCT**, **FUNDING**, **CODEOWNERS**, **SUPPORT**, **SPONSORS**
+- [x] **Workflows**: docker, release, codeql, stale, labels, lint-links + typos
+- [x] **README** stargazers wall, contributors graph, used-by table, three-up TL;DR
+- [x] **OG / SEO** metadata in `docs/index.html`, social preview spec
+- [x] **`.github/topics.md`** — 20 GitHub topics for discovery
+
+## Shipped (v7 — discoverability + tooling)
+
+- [x] **Full-text Lunr.js search** at [docs/search.html](docs/search.html) — 500+ pages
+- [x] **Cookbook 41–60** — 60 total recipes
+- [x] **All 11 API category pages** enriched (overview, examples, use cases)
+- [x] **Locale guides** PT-BR / ID / ES — 30 new pages in [docs/guides/](docs/guides/)
+- [x] **VS Code extension** scaffold — [extensions/vscode-mlx-search/](extensions/vscode-mlx-search/)
+- [x] **Browser bookmarklets** — [tools/bookmarklet.html](tools/bookmarklet.html)
+- [x] **Postman environment** generator — [docs/api/postman-environment.json](docs/api/postman-environment.json)
+- [x] **`examples/`** — 4 runnable mini projects (Playwright, CSV, cron, Discord)
+- [x] **VHS tape** for animated CLI demo — [demo/cli.tape](demo/cli.tape)
+- [x] **Dependabot** + **PR summary auto-comment** workflows
+
+## Shipped (v8 — global launch)
+
+- [x] **Locale guides** RU + TR + FR + AR — 40 new pages
+- [x] **Benchmark runner** `npm run bench` + public CSV at `docs/benchmarks/`
+- [x] **Videos page** — [docs/videos.md](docs/videos.md)
+- [x] **Editor extensions**: VS Code (live), JetBrains scaffold, Raycast scaffold, Sublime scaffold
+- [x] **Algolia DocSearch** application JSON + **Giscus** config + giscus.html
+- [x] **Blog** with 5 launch posts at [docs/blog/](docs/blog/)
+- [x] **Launch checklist** [.github/LAUNCH_CHECKLIST.md](.github/LAUNCH_CHECKLIST.md)
+- [x] **Helm chart + Terraform** templates in [deploy/](deploy/)
+- [x] **Showcase**, **Newsletter**, **Discussions seed**, weekly **star-history snapshot** workflow
+
+## Next (v9 ideas)
+
+- [ ] First real social preview PNG (`docs/social-preview.png`)
+- [ ] Real CLI `cli.gif` recorded with VHS
+- [ ] Algolia DocSearch application submitted
+- [ ] First 5 community CSVs in `docs/benchmarks/`
+- [ ] Add Hindi / Russian / Arabic guide tracks for cookbook (currently EN-only)
+- [ ] WordPress / Shopify seller plugins
+- [ ] Cloudflare Worker template that proxies the search index
+- [ ] Telegram / Discord community bots
 

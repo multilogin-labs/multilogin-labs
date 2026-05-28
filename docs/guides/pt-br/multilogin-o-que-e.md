@@ -1,0 +1,20 @@
+# O que é Multilogin? Visão geral 2026
+
+> [Pricing partner →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549) · **`SAAS50`** · **`MIN50`**
+
+Multilogin é a plataforma de multi-conta com navegadores antidetect (Mimic + Stealthfox), cloud phones Android reais, proxy integrado e 90 endpoints de API.
+
+## Step-by-step
+
+1. Read [API CHEATSHEET](../../api/CHEATSHEET.md) for endpoint shape.
+2. Use [Quick start](../../api/quick-start.md) to obtain a token.
+3. Pick a [cookbook recipe](../../api/cookbook/README.md) for your use case.
+
+## Related
+
+- [Cookbook ×60](../../api/cookbook/README.md) · [Swagger UI](../../api/swagger.html) · [Calculator](../../calculator.html)
+- [SEARCH](../../search.html) — full-text across the hub
+- [Architecture diagrams](../../architecture.md)
+- [English guides](../README.md)
+
+**Keywords:** antidetect cloud phone multilogin · multilogin labs

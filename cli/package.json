@@ -1,0 +1,35 @@
+{
+  "name": "mlx-labs",
+  "version": "0.1.0",
+  "description": "Community CLI for Multilogin Labs — search 90 API endpoints, plan calculator, warmup scheduler, cheatsheet.",
+  "type": "module",
+  "bin": {
+    "mlx-labs": "bin/mlx-labs.mjs"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "multilogin",
+    "antidetect",
+    "cli",
+    "automation",
+    "cloud-phone",
+    "playwright",
+    "puppeteer",
+    "mmo",
+    "openapi"
+  ],
+  "homepage": "https://github.com/multilogin-labs/multilogin-labs",
+  "bugs": "https://github.com/multilogin-labs/multilogin-labs/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multilogin-labs/multilogin-labs.git",
+    "directory": "cli"
+  },
+  "author": "Multilogin Labs",
+  "license": "MIT"
+}

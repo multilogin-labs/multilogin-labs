@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multilogin plan calculator</title>
+  <meta name="description" content="Pick the right Multilogin plan from profile count, team size, mobile need.">
+  <style>
+    :root { --blue: #0066FF; --bg: #0d1117; --card: #161b22; --text: #e6edf3; --muted: #8b949e; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 2rem; line-height: 1.6; }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    h1 { color: var(--blue); margin-bottom: 0.25rem; }
+    .muted { color: var(--muted); }
+    label { display: block; margin-top: 1.25rem; font-weight: 600; }
+    input, select { width: 100%; padding: 0.6rem; margin-top: 0.35rem; background: var(--card); color: var(--text); border: 1px solid #30363d; border-radius: 6px; font-size: 1rem; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .check { display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; }
+    .check input { width: auto; }
+    button { margin-top: 1.5rem; background: var(--blue); color: #fff; border: 0; padding: 0.85rem 1.5rem; font-size: 1rem; border-radius: 6px; font-weight: 600; cursor: pointer; }
+    .result { margin-top: 2rem; background: var(--card); padding: 1.5rem; border-radius: 8px; border: 1px solid #30363d; }
+    .result h2 { margin-top: 0; color: var(--blue); }
+    .cta { display: inline-block; margin-top: 1rem; background: var(--blue); color: #fff; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
+    code { background: #1c2128; padding: 2px 6px; border-radius: 4px; }
+    a { color: #58a6ff; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Multilogin plan calculator</h1>
+    <p class="muted">Same logic as <code>npm run plan</code> — runs in your browser.</p>
+
+    <div class="row">
+      <div>
+        <label for="profiles">Browser profiles</label>
+        <input type="number" id="profiles" min="1" value="20">
+      </div>
+      <div>
+        <label for="team">Team members</label>
+        <input type="number" id="team" min="1" value="2">
+      </div>
+    </div>
+
+    <label class="check">
+      <input type="checkbox" id="mobile" checked>
+      Need cloud phone / mobile minutes (TikTok, IG app, WhatsApp)
+    </label>
+    <label class="check">
+      <input type="checkbox" id="api" checked>
+      Need API automation (Playwright / Puppeteer / Selenium)
+    </label>
+    <label class="check">
+      <input type="checkbox" id="annual">
+      Annual billing (save ~35%)
+    </label>
+
+    <button onclick="calc()">Recommend plan</button>
+
+    <div id="out" class="result" hidden></div>
+
+    <p class="muted" style="margin-top:2rem">
+      Open source: <a href="https://github.com/multilogin-labs/multilogin-labs">github.com/multilogin-labs/multilogin-labs</a> ·
+      <a href="api/swagger.html">API explorer</a> ·
+      <a href="comparisons/comparison-matrix.md">Compare 16 tools</a>
+    </p>
+  </div>
+
+  <script>
+    const PLANS = [
+      { id: "trial",    name: "Trial ($2 / 3 days)", profiles: 5,   team: 1, mobile: true, monthly: 2,    annual: 2 },
+      { id: "pro10",    name: "Pro 10",              profiles: 10,  team: 2, mobile: true, monthly: 11,   annual: 7.08 },
+      { id: "pro50",    name: "Pro 50",              profiles: 50,  team: 999, mobile: true, monthly: 33, annual: 19.17 },
+      { id: "pro100",   name: "Pro 100",             profiles: 100, team: 999, mobile: true, monthly: 41, annual: 26.67 },
+      { id: "business", name: "Business 300+",       profiles: 300, team: 999, mobile: true, monthly: 89, annual: 57.08 },
+    ];
+    const AFFILIATE = "https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549";
+
+    function pick({ profiles, team }) {
+      if (profiles <= 5 && team <= 1) return PLANS[0];
+      if (profiles <= 10 && team <= 2) return PLANS[1];
+      if (profiles <= 50) return PLANS[2];
+      if (profiles <= 100) return PLANS[3];
+      return PLANS[4];
+    }
+
+    function calc() {
+      const profiles = +document.getElementById("profiles").value || 1;
+      const team = +document.getElementById("team").value || 1;
+      const mobile = document.getElementById("mobile").checked;
+      const api = document.getElementById("api").checked;
+      const annual = document.getElementById("annual").checked;
+      const plan = pick({ profiles, team });
+      const price = annual ? plan.annual : plan.monthly;
+      const out = document.getElementById("out");
+      out.hidden = false;
+      out.innerHTML = `
+        <h2>${plan.name}</h2>
+        <p>From <strong>~$${price}/mo</strong> ${annual ? "(annual)" : "(monthly)"} · up to <strong>${plan.profiles}${plan.id === "business" ? "+" : ""}</strong> profiles.</p>
+        <ul>
+          ${api ? "<li>Includes API + automation token (Pro 10+)</li>" : ""}
+          ${mobile && plan.id !== "trial" ? "<li>Cloud phone minutes on Pro 50+</li>" : ""}
+          ${plan.id === "business" ? "<li>Unlimited team seats, role-based access</li>" : ""}
+        </ul>
+        <p>Promo codes: <code>SAAS50</code> · <code>MIN50</code></p>
+        <a class="cta" href="${AFFILIATE}" rel="noopener">→ Checkout with partner discount</a>
+      `;
+    }
+  </script>
+</body>
+</html>

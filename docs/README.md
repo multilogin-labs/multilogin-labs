@@ -14,6 +14,9 @@ Everything in this repo — organized for search, SEO, and quick navigation.
 | [learn/](learn/) | **5 learning paths** (beginner → agency) |
 | [comparisons/comparison-matrix.md](comparisons/comparison-matrix.md) | **16 tools** one-page matrix |
 | [api/CHEATSHEET.md](api/CHEATSHEET.md) | One-page API reference |
+| [architecture.md](architecture.md) | **Mermaid diagrams** — auth, lifecycle, agency folders |
+| [benchmarks.md](benchmarks.md) | Boot time, RPM, RAM observations |
+| [changelog.md](changelog.md) | v1 → v5 release notes |
 | [getting-started.md](getting-started.md) | First profile, API token, scripts |
 | [faq.md](faq.md) | 50+ common questions |
 | [glossary.md](glossary.md) | Antidetect & MMO terminology |

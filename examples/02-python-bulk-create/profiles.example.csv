@@ -1,0 +1,4 @@
+name,browser,tags
+acme-tiktok-01,mimic,tiktok|warmup|client-acme
+acme-meta-01,mimic,meta-ads|warmup|client-acme
+globex-amazon-01,mimic,amazon|seller|client-globex

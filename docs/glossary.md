@@ -31,5 +31,16 @@
 | **Cloud API** | `api.multilogin.com` — workspace, profiles, proxy, auth. |
 | **Postman collection** | Official Multilogin X API reference for testing endpoints. |
 | **Cookie import** | Restore session state when migrating from another antidetect tool. |
+| **OpenAPI** | Industry-standard machine-readable API description (Swagger 3.0). |
+| **Swagger UI** | Interactive HTML explorer rendered from OpenAPI — see [api/swagger.html](api/swagger.html). |
+| **Webhook** | Outbound HTTP call from your service to receive event notifications. |
+| **CDP port** | Local TCP port exposing Chrome DevTools Protocol on a launched profile. |
+| **Workspace** | Top-level Multilogin team container (folders, profiles, members). |
+| **Folder** | Sub-container inside a workspace; required in Launcher start URL. |
+| **Member role** | Owner / admin / user — controls which folders and profiles each seat sees. |
+| **Promo code** | Coupon at checkout — `SAAS50`, `MIN50` for Multilogin Labs partner link. |
+| **Partner link** | UTM-tagged pricing URL crediting Multilogin Labs as referrer. |
+| **Trial** | $2 / 3-day evaluation tier — 5 profiles, API, proxy GB, mobile minutes. |
+| **Warmup scheduler** | Local CLI in this repo that staggers profile starts with jitter. |
 
 See also: [SEARCH_INDEX.md](SEARCH_INDEX.md) · [faq.md](faq.md)

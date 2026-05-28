@@ -1,8 +1,14 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Multilogin 24/7 Support
+  - name: Multilogin product support
     url: https://multilogin.com/help/en_US
-    about: Product support (not this repo)
-  - name: Partner pricing
+    about: Pricing, plans, billing, account-level questions belong here.
+  - name: Partner pricing & $2 trial
     url: https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549
-    about: Trial $2 · SAAS50 · MIN50
+    about: Start a trial or upgrade with codes SAAS50 / MIN50.
+  - name: GitHub Discussions
+    url: https://github.com/multilogin-labs/multilogin-labs/discussions
+    about: Q&A, show-and-tell, ideas — better than issues for open-ended topics.
+  - name: SEARCH_INDEX (100+ answers)
+    url: https://github.com/multilogin-labs/multilogin-labs/blob/main/docs/SEARCH_INDEX.md
+    about: Search before opening an issue.

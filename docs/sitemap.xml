@@ -58,6 +58,26 @@
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/38-2fa-signin-script.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/39-workspace-member-invite.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/40-disaster-recovery-stop-all.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/41-audit-cookies-bulk.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/42-playwright-multi-tab.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/43-puppeteer-screenshot-grid.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/44-selenium-explicit-wait.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/45-session-replay-record.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/46-anti-bot-test-loop.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/47-captcha-solver-hookin.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/48-cookie-jar-export-rotate.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/49-proxy-failover.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/50-bulk-tag-rename.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/51-scheduled-warmup-cron.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/52-metrics-prometheus-exporter.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/53-slack-alerting.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/54-discord-alerting.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/55-csv-import-profiles.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/56-csv-export-status.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/57-ratelimit-backoff.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/58-two-fa-rotate-backup.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/59-agency-onboarding-script.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/60-self-hosted-runner-pattern.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/cookbook/.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/endpoints/browser-core-list.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/endpoints/cloud-to-local.html</loc></url>
@@ -333,7 +353,17 @@
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/overview.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/postman-setup.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/api/quick-start.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/architecture.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/awesome-resources.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/benchmarks/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/benchmarks.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/blog/2026-05-24-test-antidetect.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/blog/2026-05-25-agency-stack.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/blog/2026-05-26-migrate-adspower.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/blog/2026-05-27-cloud-phone-vs-emulator.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/blog/2026-05-28-open-source-90-endpoints.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/blog/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/changelog.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/comparisons/.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/comparisons/comparison-matrix.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/comparisons/multilogin-vs-adspower.html</loc></url>
@@ -356,6 +386,50 @@
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/getting-started.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/glossary.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/multilogin-akhtaa.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/multilogin-api.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/multilogin-asaar.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/multilogin-ma-howa.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/multilogin-meta-ads.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/multilogin-noon-amazon.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/multilogin-playwright.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/multilogin-profile.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/multilogin-tansib.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ar/multilogin-tiktok.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/multilogin-api.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/multilogin-crear-perfil.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/multilogin-errores.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/multilogin-instalacion.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/multilogin-mercado-libre.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/multilogin-meta-ads.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/multilogin-playwright.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/multilogin-precio.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/multilogin-que-es.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/es/multilogin-tiktok.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/multilogin-amazon.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/multilogin-api.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/multilogin-erreurs.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/multilogin-installation.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/multilogin-meta-ads.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/multilogin-playwright.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/multilogin-profil.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/multilogin-quest-ce-que.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/multilogin-tarifs.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/fr/multilogin-tiktok.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/multilogin-apa-itu.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/multilogin-api.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/multilogin-buat-profil.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/multilogin-error-umum.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/multilogin-harga.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/multilogin-instalasi.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/multilogin-meta-ads.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/multilogin-playwright.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/multilogin-shopee-tokopedia.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/id/multilogin-tiktok.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/multilogin-2fa-workflow.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/multilogin-affiliate-earnings.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/multilogin-agency-setup.html</loc></url>
@@ -411,6 +485,52 @@
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/multilogin-whatsapp-business.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/multilogin-windows-vps.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/multilogin-zapier-make.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/multilogin-api.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/multilogin-erros-comuns.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/multilogin-instalar.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/multilogin-mercado-livre.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/multilogin-meta-ads.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/multilogin-o-que-e.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/multilogin-perfil.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/multilogin-playwright.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/multilogin-precos.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/pt-br/multilogin-tiktok.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/multilogin-api.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/multilogin-arbitrage.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/multilogin-chto-eto.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/multilogin-meta-ads.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/multilogin-oshibki.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/multilogin-playwright.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/multilogin-profil.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/multilogin-tiktok.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/multilogin-tseni.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/ru/multilogin-ustanovka.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/multilogin-api.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/multilogin-fiyat.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/multilogin-hatalar.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/multilogin-kurulum.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/multilogin-meta-ads.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/multilogin-nedir.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/multilogin-playwright.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/multilogin-profil.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/multilogin-tiktok.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/tr/multilogin-trendyol.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-api-tieng-viet.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-cai-dat.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-facebook-ads.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-gia-bao-nhieu.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-la-gi.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-loi-thuong-gap.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-mmo-vietnam.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-playwright.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-shopee-lazada.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-so-sanh.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-tao-profile.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/guides/vi/multilogin-tiktok-mmo.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/integrations/.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/learn/.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/learn/agency-scale-path.html</loc></url>
@@ -418,6 +538,8 @@
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/learn/developer-api-path.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/learn/migration-path.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/learn/mmo-country-path.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/newsletter.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/og-image-spec.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/platforms/.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/platforms/amazon-ecommerce.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/platforms/binance.html</loc></url>
@@ -480,4 +602,5 @@
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/use-cases/ticket-scalping.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/use-cases/traffic-arbitrage.html</loc></url>
   <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/use-cases/web-scraping.html</loc></url>
+  <url><loc>https://multilogin-labs.github.io/multilogin-labs/docs/videos.html</loc></url>
 </urlset>

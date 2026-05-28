@@ -1,0 +1,26 @@
+title: "[Q&A] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      placeholder: Searched docs/SEARCH_INDEX.md, FAQ, troubleshooting...
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Pricing / plans
+        - API automation
+        - Playwright / Puppeteer / Selenium
+        - Proxy
+        - Cloud phone
+        - Comparison vs another tool
+        - Other

@@ -1,0 +1,19 @@
+title: "[Show & Tell] "
+labels: ["show-and-tell"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you build with Multilogin?
+      description: Describe your stack, profile count, automation choice, results.
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      placeholder: tiktok, agency, scraping, airdrop
+  - type: textarea
+    id: tips
+    attributes:
+      label: Lessons learned / tips for others

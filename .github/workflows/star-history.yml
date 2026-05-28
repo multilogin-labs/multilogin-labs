@@ -1,0 +1,29 @@
+name: Snapshot star history
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch star count
+        id: stars
+        run: |
+          STARS=$(curl -s https://api.github.com/repos/${{ github.repository }} | jq -r .stargazers_count)
+          DATE=$(date -u +%Y-%m-%d)
+          echo "$DATE,$STARS" >> docs/benchmarks/star-history.csv
+          echo "stars=$STARS" >> $GITHUB_OUTPUT
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/benchmarks/star-history.csv
+          git diff --cached --quiet || git commit -m "chore: weekly star snapshot (${{ steps.stars.outputs.stars }})"
+          git push

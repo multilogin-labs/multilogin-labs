@@ -12,12 +12,68 @@
 [![Multilogin Partner](https://img.shields.io/badge/Multilogin-Official%20Partner-0066FF?style=for-the-badge)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 [![Trial](https://img.shields.io/badge/Trial-%242%20%2F%203%20days-00C853?style=for-the-badge)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 [![Promo](https://img.shields.io/badge/Code-SAAS50-FF6D00?style=for-the-badge)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
+[![Docs](https://img.shields.io/badge/docs-490%2B%20pages-0066FF)](docs/README.md)
+[![API](https://img.shields.io/badge/API-90%20endpoints-0066FF)](docs/api/README.md)
+[![Cookbooks](https://img.shields.io/badge/cookbook-40%20recipes-0066FF)](docs/api/cookbook/README.md)
+[![Languages](https://img.shields.io/badge/i18n-16%20languages-0066FF)](locales/)
 
 **[→ Partner pricing & $2 trial](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1200&color=0066FF&center=true&vCenter=true&width=600&lines=Multi-account+without+bans;Cloud+phones+%2B+antidetect;Scripts+%26+guides+for+MMO+teams;Partner+deal%3A+SAAS50+%7C+MIN50" alt="Typing intro" />
 
+<a href="https://github.com/multilogin-labs">
+  <img src="https://github-readme-stats.vercel.app/api?username=multilogin-labs&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=false" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=multilogin-labs&layout=compact&theme=tokyonight&hide_border=true" height="150" />
+</a>
+
+<img src="https://api.star-history.com/svg?repos=multilogin-labs/multilogin-labs&type=Date&theme=dark" width="80%" alt="Star history" />
+
 </div>
+
+---
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### 🚀 Try in 60 seconds
+
+```bash
+# Pick the right plan
+npx mlx-labs plan -- --profiles 50 --team 3 --mobile
+
+# Search any of 90 API endpoints
+npx mlx-labs search profile start
+
+# See the cheatsheet
+npx mlx-labs cheatsheet
+```
+
+</td>
+<td width="33%" valign="top">
+
+### 📡 Built-in OpenAPI
+
+- 90 endpoints in [openapi.json](docs/api/openapi.json)
+- Live [Swagger UI](docs/api/swagger.html)
+- Postman-grade docs
+- 40 cookbook recipes
+- Python + Node clients
+
+</td>
+<td width="33%" valign="top">
+
+### 🌍 Global coverage
+
+- 16 languages
+- 30 country playbooks
+- 13 platform playbooks
+- 16 tool comparisons
+- 55+ guides + 12 VI guides
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -26,20 +82,34 @@
 | | Resource | Link |
 |---|---|---|
 | 🔍 | **Search anything** | [**docs/SEARCH_INDEX.md**](docs/SEARCH_INDEX.md) |
-| 📡 | **Multilogin X API** | [**docs/api/**](docs/api/) — 90 endpoints · [cheatsheet](docs/api/CHEATSHEET.md) · [cookbook ×40](docs/api/cookbook/) |
+| 📡 | **Multilogin X API** | [**docs/api/**](docs/api/) — 90 endpoints · [cheatsheet](docs/api/CHEATSHEET.md) · [Swagger UI](docs/api/swagger.html) · [cookbook ×40](docs/api/cookbook/) |
 | 📚 | **Full docs hub** | [docs/README.md](docs/README.md) |
 | 🚀 | **Getting started** | [docs/getting-started.md](docs/getting-started.md) |
 | ❓ | **FAQ · Glossary · Fixes** | [faq](docs/faq.md) · [glossary](docs/glossary.md) · [troubleshooting](docs/troubleshooting.md) |
-| 📊 | **Plan calculator** | `npm run plan` · [tools/plan-calculator.mjs](tools/plan-calculator.mjs) |
+| 📊 | **Plan calculator** | `npm run plan` · [CLI](tools/plan-calculator.mjs) · [Web](docs/calculator.html) |
+| ⏱️ | **Warmup scheduler** | `node tools/warmup-scheduler.mjs --help` |
 | ⚔️ | **16 comparisons + matrix** | [docs/comparisons/](docs/comparisons/) · [matrix](docs/comparisons/comparison-matrix.md) |
 | 🎓 | **Learning paths** | [docs/learn/](docs/learn/) |
 | 📱 | **13 platform playbooks** | [docs/platforms/](docs/platforms/) |
 | 🌏 | **30 country playbooks** | [docs/playbooks/](docs/playbooks/) |
 | 💼 | **11 use-case guides** | [docs/use-cases/](docs/use-cases/) |
 | 🤖 | **Scripts** | [Node](scripts/) · [Python](scripts/python/) |
-| 📖 | **55+ tutorials** | [docs/guides/](docs/guides/) |
+| 📖 | **55+ tutorials (EN)** | [docs/guides/](docs/guides/) |
+| 🇻🇳 | **Hướng dẫn tiếng Việt** | [docs/guides/vi/](docs/guides/vi/) |
 | 🔌 | **Integrations** | [docs/integrations/](docs/integrations/) |
 | 🌍 | **16 languages** | [locales/](locales/) |
+| 📦 | **CLI** (`npx mlx-labs`) | [cli/](cli/) · [Python](python/) |
+| 🐳 | **Docker** | [Dockerfile](Dockerfile) · [compose](docker-compose.yml) · GHCR |
+| 🏗️ | **Architecture** | [docs/architecture.md](docs/architecture.md) — Mermaid diagrams |
+| 🪪 | **Awesome list** | [AWESOME.md](AWESOME.md) — antidetect ecosystem |
+| 🔎 | **Full-text search** | [docs/search.html](docs/search.html) — Lunr.js, 500+ pages |
+| 🧩 | **Editor extensions** | [extensions/](extensions/) — VS Code + bookmarklets |
+| 🧪 | **Runnable examples** | [examples/](examples/) — Playwright, CSV, cron, Discord alerts |
+| 🎬 | **Videos** | [docs/videos.md](docs/videos.md) — curated tutorials |
+| 📊 | **Benchmarks** | `npm run bench` · [public CSVs](docs/benchmarks/README.md) |
+| 📝 | **Blog** | [docs/blog/](docs/blog/) — 5 launch posts |
+| 🚀 | **Deploy templates** | [deploy/](deploy/) — Helm + Terraform |
+| 🏆 | **Showcase** | [SHOWCASE.md](SHOWCASE.md) — built with Multilogin Labs |
 
 > **`multilogin-labs/multilogin-labs`** = GitHub profile repo → [github.com/multilogin-labs](https://github.com/multilogin-labs)
 
@@ -78,6 +148,47 @@
 | 🇫🇷 | **Français** — France, Africa | [Français ↓](#-français) |
 
 **Locale files:** [`locales/`](locales/) · Full guides in [`docs/`](docs/) · Scripts in [`scripts/`](scripts/)
+
+---
+
+## How it fits together
+
+```mermaid
+flowchart LR
+  Dev["Your scripts<br/>(Node / Python)"] -->|Bearer JWT| Auth["api.multilogin.com<br/>auth · workspace"]
+  Dev -->|REST| Launcher["launcher.mlx.yt:45001<br/>start / stop"]
+  Launcher -->|CDP port| Browser["Mimic / Stealthfox"]
+  Launcher -->|stream| Phone["Cloud phone<br/>Android 12-14"]
+  Browser -->|egress| Proxy["Built-in proxy<br/>residential / mobile"]
+  Phone --> Proxy
+  Proxy --> Targets["TikTok · Meta · Amazon · Stripe · ..."]
+```
+
+Full diagrams: [docs/architecture.md](docs/architecture.md).
+
+---
+
+## ⭐ Stargazers wall
+
+[![Stargazers over time](https://api.star-history.com/svg?repos=multilogin-labs/multilogin-labs&type=Timeline&theme=dark)](https://star-history.com/#multilogin-labs/multilogin-labs)
+
+<a href="https://github.com/multilogin-labs/multilogin-labs/stargazers">
+  <img src="https://reporoster.com/stars/multilogin-labs/multilogin-labs" alt="Stargazers" />
+</a>
+
+[![Contributors](https://contrib.rocks/image?repo=multilogin-labs/multilogin-labs)](https://github.com/multilogin-labs/multilogin-labs/graphs/contributors)
+
+---
+
+## 🤝 Used by / community
+
+> Are you using this repo to power your team's automation? Open a PR adding your logo or a quote — we link back.
+
+| Slot | Who |
+|---|---|
+| 1 | _your agency here_ |
+| 2 | _your project here_ |
+| 3 | _your script here_ |
 
 ---
 

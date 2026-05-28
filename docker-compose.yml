@@ -1,0 +1,25 @@
+services:
+  labs:
+    build: .
+    image: ghcr.io/multilogin-labs/multilogin-labs:latest
+    container_name: mlx-labs
+    environment:
+      MULTILOGIN_TOKEN: ${MULTILOGIN_TOKEN:-}
+      MULTILOGIN_FOLDER_ID: ${MULTILOGIN_FOLDER_ID:-}
+      MULTILOGIN_LAUNCHER: ${MULTILOGIN_LAUNCHER:-https://host.docker.internal:45001}
+      MULTILOGIN_AUTOMATION_TYPE: ${MULTILOGIN_AUTOMATION_TYPE:-playwright}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./.env:/app/.env:ro
+    command: ["node", "tools/api-search.mjs"]
+
+  pages-preview:
+    image: nginx:alpine
+    container_name: mlx-pages-preview
+    ports:
+      - "8080:80"
+    volumes:
+      - ./docs:/usr/share/nginx/html:ro
+    depends_on:
+      - labs

@@ -1,0 +1,31 @@
+name: New comparison request
+description: Suggest a new "Multilogin vs X" comparison page
+title: "[Comparison] Multilogin vs "
+labels: ["comparison", "docs"]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name
+      description: e.g. SwitchyOmega, GenLogin
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Vendor website
+  - type: textarea
+    id: angle
+    attributes:
+      label: Angle / why does this comparison matter?
+      placeholder: Audience, pricing band, market region, key differentiator.
+  - type: checkboxes
+    id: covered
+    attributes:
+      label: Coverage I want
+      options:
+        - label: Feature matrix
+        - label: Pricing comparison
+        - label: Migration plan
+        - label: Cloud phone alternative angle
+        - label: API depth comparison
