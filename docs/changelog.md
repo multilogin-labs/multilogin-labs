@@ -2,6 +2,19 @@
 
 > [Partner pricing →](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 
+## v9 — agents, edges, integrations (May 2026)
+
+- **Cookbook 61–80** — 20 new recipes (80 total). Coverage: GitHub Actions cron, Playwright codegen, Go/Rust client snippets, k6 load tests, Vitest mocks, Pytest fixtures, Datadog metrics, Sentry, Ofelia, Vercel cron, Cloudflare Worker, n8n, Make.com, Zapier, Supabase, Airtable, Notion, OpenTelemetry, rotating residential proxies.
+- **Cloudflare Worker template** — search proxy + partner redirect ([integrations/cloudflare-worker/](../integrations/cloudflare-worker/))
+- **Telegram bot** + **Discord bot** scaffolds ([integrations/](../integrations/))
+- **Browser MV3 extension** for Chrome / Firefox ([extensions/browser-mlx/](../extensions/browser-mlx/))
+- **WordPress plugin** with `[mlx_partner]` shortcode
+- **Full Postman v2.1 collection** ([api/postman-collection.json](api/postman-collection.json)) — not just env, full requests
+- **AGENTS.md** + **.cursor/rules/repo.mdc** for Cursor / Claude Code / Aider / Copilot
+- **Press kit** ([press-kit/](../press-kit/)) — logo SVG, 1200 × 630 banner SVG, palette, boilerplate
+- **AdsPower → Multilogin** CSV migration tool ([tools/migrate-adspower.mjs](../tools/migrate-adspower.mjs)) + [migration guide](migrations/from-adspower.md)
+- **Total Markdown** → 625 files, sitemap → 624 entries
+
 ## v8 — global launch (May 2026)
 
 - **40 locale guides**: RU + TR + FR + AR (10 each), bringing total locale coverage to **8 languages**

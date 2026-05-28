@@ -12,10 +12,10 @@
 [![Multilogin Partner](https://img.shields.io/badge/Multilogin-Official%20Partner-0066FF?style=for-the-badge)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 [![Trial](https://img.shields.io/badge/Trial-%242%20%2F%203%20days-00C853?style=for-the-badge)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
 [![Promo](https://img.shields.io/badge/Code-SAAS50-FF6D00?style=for-the-badge)](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)
-[![Docs](https://img.shields.io/badge/docs-490%2B%20pages-0066FF)](docs/README.md)
+[![Docs](https://img.shields.io/badge/docs-625%2B%20pages-0066FF)](docs/README.md)
 [![API](https://img.shields.io/badge/API-90%20endpoints-0066FF)](docs/api/README.md)
-[![Cookbooks](https://img.shields.io/badge/cookbook-40%20recipes-0066FF)](docs/api/cookbook/README.md)
-[![Languages](https://img.shields.io/badge/i18n-16%20languages-0066FF)](locales/)
+[![Cookbooks](https://img.shields.io/badge/cookbook-80%20recipes-0066FF)](docs/api/cookbook/README.md)
+[![Languages](https://img.shields.io/badge/i18n-16%20UI%20%2B%209%20guide%20locales-0066FF)](locales/)
 
 **[→ Partner pricing & $2 trial](https://multilogin.com/pricing/?utm_source=saas&utm_medium=partner&a_aid=saas&a_bid=f5fad549)**
 
@@ -56,8 +56,8 @@ npx mlx-labs cheatsheet
 
 - 90 endpoints in [openapi.json](docs/api/openapi.json)
 - Live [Swagger UI](docs/api/swagger.html)
-- Postman-grade docs
-- 40 cookbook recipes
+- [Postman collection v2.1](docs/api/postman-collection.json) (90 endpoints)
+- 80 cookbook recipes
 - Python + Node clients
 
 </td>
