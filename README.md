@@ -103,13 +103,17 @@ npx mlx-labs cheatsheet
 | 🏗️ | **Architecture** | [docs/architecture.md](docs/architecture.md) — Mermaid diagrams |
 | 🪪 | **Awesome list** | [AWESOME.md](AWESOME.md) — antidetect ecosystem |
 | 🔎 | **Full-text search** | [docs/search.html](docs/search.html) — Lunr.js, 500+ pages |
-| 🧩 | **Editor extensions** | [extensions/](extensions/) — VS Code + bookmarklets |
+| 🧩 | **Editor extensions** | [extensions/](extensions/) — VS Code · JetBrains · Sublime · Raycast · **Chrome / Firefox MV3** |
+| ⚡ | **Integrations** | [integrations/](integrations/) — Cloudflare Worker · Telegram bot · Discord bot · WordPress |
 | 🧪 | **Runnable examples** | [examples/](examples/) — Playwright, CSV, cron, Discord alerts |
 | 🎬 | **Videos** | [docs/videos.md](docs/videos.md) — curated tutorials |
 | 📊 | **Benchmarks** | `npm run bench` · [public CSVs](docs/benchmarks/README.md) |
 | 📝 | **Blog** | [docs/blog/](docs/blog/) — 5 launch posts |
 | 🚀 | **Deploy templates** | [deploy/](deploy/) — Helm + Terraform |
 | 🏆 | **Showcase** | [SHOWCASE.md](SHOWCASE.md) — built with Multilogin Labs |
+| 🤖 | **For coding agents** | [AGENTS.md](AGENTS.md) · [.cursor/rules/](.cursor/rules/) |
+| 🎨 | **Press kit** | [press-kit/](press-kit/) — logo, banner, palette |
+| 🔄 | **Migrate from AdsPower** | [migration tool + guide](docs/migrations/from-adspower.md) |
 
 > **`multilogin-labs/multilogin-labs`** = GitHub profile repo → [github.com/multilogin-labs](https://github.com/multilogin-labs)
 

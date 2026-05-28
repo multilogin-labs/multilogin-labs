@@ -75,6 +75,17 @@ Use **Ctrl+F** on this page or GitHub repo search. Every topic links to a guide 
 | multilogin terraform aws s3 | [../deploy/terraform/](../deploy/terraform/) |
 | multilogin showcase built with | [../SHOWCASE.md](../SHOWCASE.md) |
 | multilogin launch hacker news reddit | [../.github/LAUNCH_CHECKLIST.md](../.github/LAUNCH_CHECKLIST.md) |
+| multilogin cookbook 80 recipes | [api/cookbook/](api/cookbook/) |
+| multilogin postman collection v2 | [api/postman-collection.json](api/postman-collection.json) |
+| multilogin browser extension chrome firefox | [../extensions/browser-mlx/](../extensions/browser-mlx/) |
+| multilogin cloudflare worker search edge | [../integrations/cloudflare-worker/](../integrations/cloudflare-worker/) |
+| multilogin telegram bot grammy | [../integrations/telegram-bot/](../integrations/telegram-bot/) |
+| multilogin discord bot discordjs | [../integrations/discord-bot/](../integrations/discord-bot/) |
+| multilogin wordpress plugin shortcode partner | [../integrations/wordpress-plugin/](../integrations/wordpress-plugin/) |
+| multilogin agents.md cursor rules ai coding | [../AGENTS.md](../AGENTS.md) · [../.cursor/rules/](../.cursor/rules/) |
+| multilogin press kit logo banner brand | [../press-kit/](../press-kit/) |
+| multilogin migrate adspower csv tool | [migrations/from-adspower.md](migrations/from-adspower.md) · [../tools/migrate-adspower.mjs](../tools/migrate-adspower.mjs) |
+| multilogin social preview og image | [social-preview.svg](social-preview.svg) |
 
 ## Antidetect & browser
 
