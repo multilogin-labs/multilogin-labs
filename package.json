@@ -30,7 +30,7 @@
   },
   "optionalDependencies": {
     "playwright": "^1.49.0",
-    "puppeteer-core": "^23.0.0"
+    "puppeteer-core": "^25.1.0"
   },
   "keywords": [
     "multilogin",
