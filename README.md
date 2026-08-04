@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0066FF,100:003580&height=150&section=header&text=Multilogin%20Labs&fontSize=42&fontColor=ffffff&animation=fadeIn" width="100%" />
 
-### `@multilogin-labs` · Official partner hub · Profile repository
+### `@mlx-labs` · Official partner hub · Profile repository
 
 **Antidetect browser · Cloud phone · Multi-account · MMO automation · 16 languages**
 
